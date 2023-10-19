@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Ксения Колгина](https://up.htmlacademy.ru/htmlcss-individual/1/user/2439803).
-* Наставник: `Ещё как известно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien)
 
 ---
 
