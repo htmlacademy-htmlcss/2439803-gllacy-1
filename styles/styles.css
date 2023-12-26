@@ -1,7 +1,7 @@
 @font-face {
   font-family: Inter;
   font-style: normal;
-  font-weight: 400:
+  font-weight: 400;
   src: url("../fonts/inter-400.woff2") format("woff2");
   font-display: swap;
 }
@@ -23,7 +23,368 @@
 }
 
 body {
-  font-family: Inter, arial;
+  font-family: Inter, sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 22px;
+  color: rgba(86, 92, 102, 1);
+  background-color: rgba(254, 175, 195, 1);
+}
+
+.page-header, .page-footer {
+  color: rgba(45, 52, 64, 1);
+  background: rgba (0, 0, 0, 0);
+}
+
+
+
+header .navigation-link {
+  font-family: Inter, sans-serif;
+  line-height: 20px;
+  color: rgba(45, 52, 64, 1);
+  text-decoration: none;
+  text-align: center;
+}
+
+footer .navigation-link {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(45, 52, 64, 1);
+  text-decoration: none;
+  text-align: center;
+}
+
+header .contacts-phone {
+  color: rgba(45, 52, 64, 1);
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.banner-product-list {
+  text-align: left;
+  color: rgba(45, 52, 64, 1);
+}
+
+.banner-product-title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.banner-product-description {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.button.additional-button {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(252, 252, 252, 1);
+  background-color: rgba(255, 47, 100, 1);
+  text-decoration: none;
+}
+
+.button {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(45, 52, 64, 1);
+  background-color: rgba(252, 252, 252, 1);
+  text-decoration: none;
+}
+
+.stocks {
+  color: rgba(45, 52, 64, 1);
+}
+
+.stocks-list-title {
+  text-align:center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.stocks-item {
+  text-align: left;
+}
+
+.stocks-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/**Академия примет такие селекторы или как и по id нельзя?*/
+li.stocks-item:first-child {
+ background-color: rgba(255, 119, 153, 1);
+ background-image: url("../images/stock-images/raspberries-for-free.png");
+ background-repeat: no-repeat;
+ background-position: right;
+}
+
+li.stocks-item:nth-child(2) {
+  background-color: rgba(255, 119, 153, 1);
+  background-image: url("../images/stock-images/marshmallows-for-free.png");
+  background-repeat: no-repeat;
+  background-position: right;
+ }
+
+.product-list-title {
+  text-align: center; /**почему-то не выравнивается по центру. Хотела объединить сo .stocks-list-item, но результат тот же*/
+  color: rgba(45, 52, 64, 1);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.popular-products a {
+  text-decoration: none;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card-title {
+  color: rgba(45, 52, 64, 1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.product-card-description {
+  color: rgba(86, 92, 102, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.product-card-price {
+  color: rgba(45, 52, 64, 1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.advantages {
+  background-color: rgba(217, 217, 217, 1);
+  background-image: url("../images/waffle-background.jpg");
+  background-size: 100% auto;
+  background-repeat: repeat;
+}
+
+.advantages-list-title {
+  color: rgba(45, 52, 64, 1);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: center; /**почему-то тоже не выравнивается по центру*/
+}
+
+.blog-item {
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url("../images/background-blog-.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blog-item {
+  text-align: left;
+}
+
+.blog-article-subtitle {
+  color: rgba(86, 92, 102, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.blog-article-title {
+  color: rgba(45, 52, 64, 1);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.blog-article-link {
+  text-decoration: none;
+}
+
+.subscribe {
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url("../images/background-stripes.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.subscribe-description {
+  text-align: left;
+}
+
+.appointment {
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url("../images/background-appointment.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.appointment-title {
+  color: rgba(45, 52, 64, 1);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
+  text-align: left;
+}
+
+
+.appointment-description {
+  color: rgba(86, 92, 102, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+
+.appointment-form-place {
+  background-color: rgba(252, 252, 252, 1);
+}
+
+.form-label, .appointment-form-phone {
+  color: rgba(45, 52, 64, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.contacts {
+  background-color: rgba(239, 226, 226, 1);
+  background-image: url("../images/background-contacts.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.contacts-address-text {
+  color: rgba(45, 52, 64, 1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.contacts-address a {
+  color: rgba(45, 52, 64, 1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.contacts-extradescription {
+  color: rgba(86, 92, 102, 1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.htmlacademy-link {
+  color: rgba(45, 52, 64, 1);
+}
+
+.about-text {
+  color: rgba(45, 52, 64, 1);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.inner-header-title {
+  color: rgba(45, 52, 64, 1);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.breadcrumbs {
+  color: rgba(45, 52, 64, 1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+li.breadcrumbs-item:nth-child(3) {
+  text-decoration: underline;
+}
+.select-control, .catalog-filter-title {
+  color: rgba(45, 52, 64, 1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.button.filer-button {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(45, 52, 64, 1);
+  background-color: rgba(252, 252, 252, 0.3);
+  text-decoration: none;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.pagination {
+  color: rgba(45, 52, 64, 1);
+  background-color: rgba (0, 0, 0, 0);
+}
+
+.pagination-link {
+  color: rgba(45, 52, 64, 1);
+  background-color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.pagination-current {
+  background-color: rgba(252, 252, 252, 1);
 }

@@ -149,7 +149,7 @@
       </section>
       <section class="popular-products">
         <h2 class="visually-hidden">Популярное мороженое</h2>
-        <span class="product-list-title">Попробуйте самые популярные вкусы нашего мороженого</span>
+        <span class="product-list-title">Попробуйте самые популярные<br> вкусы нашего мороженого</span>
         <ul class="popular-product-list">
           <li class="product-card">
             <a class="product-card-link" href="raspberry.html">
@@ -234,7 +234,8 @@
       </section>
       <article class="blog-item">
         <a class="blog-article-link" href="10-ways-to-serve.html">
-        <h2 class="visually-hidden">Новое в нашем блоге</h2>
+       <!-- <h2 class="visually-hidden">Новое в нашем блоге</h2> Почему тут тег скрытого заголовка стоит? его ведь не должно быть?-->
+        <h2 class="blog-article-subtitle">Новое в нашем блоге</h2>
         <span class="blog-article-title">10 способов сервировки фруктовых щербетов к столу</span>
         </a>
       </article>
@@ -244,15 +245,16 @@
           в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" placeholder="email@example.com">
-          <button class="button" type="submit">Отправить</button>
+          <button class="button additional-button" type="submit">Отправить</button>  <!-- Добавила розовым кнопкам ещё один тег-->
         </form>
       </section>
       <section class="appointment">
         <h2 class="appointment-title">Доставка любимого мороженого на дом</h2>
         <p class="appointment-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
           Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-        <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="appointment-form-place">
+          <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="appointment-form-date">
             <label class="form-label" for="appointment-date">Дата</label>
             <input type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
@@ -265,8 +267,9 @@
             <label class="form-label" for="appointment-adress">Адрес</label>
             <input type="text" id="appointment-adress" name="appointment-adress" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
-          <button class="button" type="submit">Отправить</button>
+          <button class="button additional-button" type="submit">Отправить</button>
         </form>
+        </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
@@ -277,7 +280,7 @@
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <p class="contacts-extradescription">(с 10 до 20 ежедневно)</p>
-        <a class="button button-feedback" href="#">Форма обратной связи</a>
+        <a class="button additional-button" href="#">Форма обратной связи</a> <!--убрала класс button-feedback и добавила additional-button, как и для остальных розовых кнопок-->
       </section>
     </main>
     <footer class="page-footer">
