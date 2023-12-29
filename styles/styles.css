@@ -43,7 +43,6 @@ header .navigation-link {
   line-height: 20px;
   color: rgba(45, 52, 64, 1);
   text-decoration: none;
-  text-align: center;
 }
 
 footer .navigation-link {
@@ -52,7 +51,6 @@ footer .navigation-link {
   line-height: 20px;
   color: rgba(45, 52, 64, 1);
   text-decoration: none;
-  text-align: center;
 }
 
 header .contacts-phone {
@@ -65,6 +63,7 @@ header .contacts-phone {
 .banner-product-list {
   text-align: left;
   color: rgba(45, 52, 64, 1);
+  list-style: none;
 }
 
 .banner-product-title {
@@ -81,19 +80,11 @@ header .contacts-phone {
   line-height: 24px;
 }
 
-.button.additional-button {
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  text-align: center;
-  color: rgba(252, 252, 252, 1);
-  background-color: rgba(255, 47, 100, 1);
-  text-decoration: none;
+.slider-pagination, .social-list, .footer-social-list, .advantages-list, .popular-product-list, .navigation-list, .stocks-list, .catalog-filter-list, .product-list {
+  list-style: none;
 }
 
 .button {
-  font-family: Inter;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -101,11 +92,24 @@ header .contacts-phone {
   color: rgba(45, 52, 64, 1);
   background-color: rgba(252, 252, 252, 1);
   text-decoration: none;
+  border: 0;
 }
+
+.additional-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(252, 252, 252, 1);
+  background-color: rgba(255, 47, 100, 1);
+  border: 0;
+}
+
 
 .stocks {
   color: rgba(45, 52, 64, 1);
 }
+
 
 .stocks-list-title {
   text-align:center;
@@ -113,13 +117,14 @@ header .contacts-phone {
   font-style: normal;
   font-weight: 900;
   line-height: 46px;
+  list-style: none;
 }
 
 .stocks-item {
   text-align: left;
 }
 
-.stocks-title {
+.seсtion-title {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -154,6 +159,8 @@ li.stocks-item:nth-child(2) {
   text-decoration: none;
 }
 
+
+
 .product-card {
   text-align: center;
 }
@@ -185,18 +192,10 @@ li.stocks-item:nth-child(2) {
 .advantages {
   background-color: rgba(217, 217, 217, 1);
   background-image: url("../images/waffle-background.jpg");
-  background-size: 100% auto;
+  background-size: 38 38 auto;
   background-repeat: repeat;
 }
 
-.advantages-list-title {
-  color: rgba(45, 52, 64, 1);
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 46px;
-  text-align: center; /**почему-то тоже не выравнивается по центру*/
-}
 
 .blog-item {
   background-color: rgba(255, 255, 255, 1);
@@ -249,15 +248,9 @@ li.stocks-item:nth-child(2) {
   background-repeat: no-repeat;
 }
 
-.appointment-title {
-  color: rgba(45, 52, 64, 1);
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 46px;
+.appointment-title, .inner-header-title {
   text-align: left;
 }
-
 
 .appointment-description {
   color: rgba(86, 92, 102, 1);
@@ -324,14 +317,6 @@ li.stocks-item:nth-child(2) {
   line-height: 16px;
 }
 
-.inner-header-title {
-  color: rgba(45, 52, 64, 1);
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 46px;
-}
-
 .breadcrumbs {
   color: rgba(45, 52, 64, 1);
   font-size: 14px;
@@ -355,7 +340,7 @@ li.breadcrumbs-item:nth-child(3) {
   font-weight: 400;
   line-height: 20px;
 }
-.button.filer-button {
+.filter-button {
   font-family: Inter;
   font-size: 14px;
   font-weight: 700;
@@ -363,7 +348,7 @@ li.breadcrumbs-item:nth-child(3) {
   text-align: center;
   color: rgba(45, 52, 64, 1);
   background-color: rgba(252, 252, 252, 0.3);
-  text-decoration: none;
+  border:0;
 }
 
 .product-card-link {

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -131,7 +132,7 @@
       </section>
       <section class="stocks">
         <h2 class="visually-hidden">Акции</h2>
-        <h2 class="stocks-list-title">Заказывайте мороженое <br>и получайте подарки!</h2>
+        <h2 class="seсtion-title">Заказывайте мороженое <br>и получайте подарки!</h2>
         <ul class="stocks-list">
           <li class="stocks-item">
             <h3 class="stocks-title">Малинка даром!</h3>
@@ -149,7 +150,7 @@
       </section>
       <section class="popular-products">
         <h2 class="visually-hidden">Популярное мороженое</h2>
-        <span class="product-list-title">Попробуйте самые популярные<br> вкусы нашего мороженого</span>
+        <span class="seсtion-title">Попробуйте самые популярные<br> вкусы нашего мороженого</span>
         <ul class="popular-product-list">
           <li class="product-card">
             <a class="product-card-link" href="raspberry.html">
@@ -199,33 +200,33 @@
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <span class="advantages-list-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
+        <span class="seсtion-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого
           собственного производства на развес</span>
         <ul class="advantages-list">
           <li class="advantages-item">
             <h3 class="visually-hidden">Налаженное собственное производство</h3>
-            <img class="advantages-icon" src="images/advantages-icons/icon-ice-cream.svg" width="32" height="32" alt="Мороженое">
+            <img class="advantages-icon" src="images/icons/advantages-icons/icon-ice-cream.svg" width="32" height="32" alt="Мороженое">
             <p class="advantages-description">Всё наше мороженое изготавливается на собственном производстве с
               использованием современного оборудования
               и проверенных временем технологий.</p>
           </li>
           <li class="advantages-item">
             <h3 class="visually-hidden">Качественные ингредиенты</h3>
-            <img class="advantages-icon" src="images/advantages-icons/icon-leaf.svg" width="32" height="32" alt="Листик">
+            <img class="advantages-icon" src="images/icons/advantages-icons/icon-leaf.svg" width="32" height="32" alt="Листик">
             <p class="advantages-description">Для приготовления мороженого используются сливки и молоко высочайшего
               качества. Все ингредиенты
               и добавки произведены из натурального сырья.</p>
           </li>
           <li class="advantages-item">
             <h3 class="visually-hidden">Сотрудничество с фермерствами</h3>
-            <img class="advantages-icon" src="images/advantages-icons/icon-cow.svg" width="32" height="32" alt="Коровка">
+            <img class="advantages-icon" src="images/icons/advantages-icons/icon-cow.svg" width="32" height="32" alt="Коровка">
             <p class="advantages-description">Закупка ингредиентов производится только
               у проверенных фермерских хозяйств, с которыми
               нас связывает долговременное сотрудничество.</p>
           </li>
           <li class="advantages-item">
             <h3 class="visually-hidden">Доставка в термопаке</h3>
-            <img class="advantages-icon" src="images/advantages-icons/icon-thermometer.svg" width="32" height="32" alt="Термометр">
+            <img class="advantages-icon" src="images/icons/advantages-icons/icon-thermometer.svg" width="32" height="32" alt="Термометр">
             <p class="advantages-description">Доставка нашего мороженого осуществляется в специальном термопаке, который
               не даёт мороженому
               растаять и позволяет сохранить превосходный вкус.</p>
@@ -234,7 +235,6 @@
       </section>
       <article class="blog-item">
         <a class="blog-article-link" href="10-ways-to-serve.html">
-       <!-- <h2 class="visually-hidden">Новое в нашем блоге</h2> Почему тут тег скрытого заголовка стоит? его ведь не должно быть?-->
         <h2 class="blog-article-subtitle">Новое в нашем блоге</h2>
         <span class="blog-article-title">10 способов сервировки фруктовых щербетов к столу</span>
         </a>
@@ -245,11 +245,11 @@
           в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" placeholder="email@example.com">
-          <button class="button additional-button" type="submit">Отправить</button>  <!-- Добавила розовым кнопкам ещё один тег-->
+          <button class="button additional-button" type="submit">Отправить</button>
         </form>
       </section>
       <section class="appointment">
-        <h2 class="appointment-title">Доставка любимого мороженого на дом</h2>
+        <h2 class="seсtion-title appointment-title ">Доставка любимого мороженого на дом</h2>
         <p class="appointment-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин?
           Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
         <div class="appointment-form-place">
@@ -280,7 +280,7 @@
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
         <p class="contacts-extradescription">(с 10 до 20 ежедневно)</p>
-        <a class="button additional-button" href="#">Форма обратной связи</a> <!--убрала класс button-feedback и добавила additional-button, как и для остальных розовых кнопок-->
+        <a class="button additional-button" href="#">Форма обратной связи</a>
       </section>
     </main>
     <footer class="page-footer">
