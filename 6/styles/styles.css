@@ -1,0 +1,492 @@
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(86, 92, 102, 1);
+  background-color: rgba(254, 175, 195, 1);
+}
+
+html {
+  height: 100%;
+}
+
+/*Можно ли указывать высоту хэдера, ведь главная направляющая в body идёт вертикально?*/
+header {
+  height: 104px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+
+/**
+.menu-container {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+**/
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+.left-menu-container {
+  width: 575px;
+  margin: 24px 0;
+}
+
+.right-menu-container {
+  width: 431px;
+  margin: 24px 0;
+}
+**/
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.slider {
+  padding-bottom: 80px;
+}
+
+.page-header {
+  display: flex;
+  color: rgba(45, 52, 64, 1);
+  background: rgba (0, 0, 0, 0);
+}
+
+.navigation-logo {
+  width: 137px;
+}
+
+.header-navigation {
+  width: 450px;
+}
+
+.user-header-navigation {
+  width: 267px;
+}
+
+.page-footer {
+  color: rgba(45, 52, 64, 1);
+  background: rgba (0, 0, 0, 0);
+}
+
+header .navigation-link {
+  font-family: Inter, sans-serif;
+  line-height: 20px;
+  color: rgba(45, 52, 64, 1);
+  text-decoration: none;
+}
+
+footer .navigation-link {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(45, 52, 64, 1);
+  text-decoration: none;
+}
+
+header .contacts-phone {
+  color: rgba(45, 52, 64, 1);
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.banner-product-list {
+  text-align: left;
+  color: rgba(45, 52, 64, 1);
+  list-style: none;
+}
+
+.banner-product-title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.banner-product-description {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.slider-pagination, .social-list, .footer-social-list, .advantages-list, .popular-product-list, .navigation-list, .stocks-list, .catalog-filter-list, .product-list {
+  list-style: none;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(45, 52, 64, 1);
+  background-color: rgba(252, 252, 252, 1);
+  text-decoration: none;
+  border: 0;
+}
+
+.additional-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(252, 252, 252, 1);
+  background-color: rgba(255, 47, 100, 1);
+  border: 0;
+}
+
+
+.stocks {
+  color: rgba(45, 52, 64, 1);
+  padding-bottom: 80px;
+}
+
+.stocks-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.stocks-item {
+  width: 570px;
+}
+
+.stocks-item {
+  text-align: left;
+}
+
+.section-title {
+  color: rgba(45, 52, 64, 1);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+
+/**Академия не примет, замени на отдельные теги*/
+li.stocks-item:first-child {
+ background-color: rgba(255, 119, 153, 1);
+ background-image: url("../images/stock-images/raspberries-for-free.png");
+ background-repeat: no-repeat;
+ background-position: right;
+}
+
+li.stocks-item:nth-child(2) {
+  background-color: rgba(255, 119, 153, 1);
+  background-image: url("../images/stock-images/marshmallows-for-free.png");
+  background-repeat: no-repeat;
+  background-position: right;
+ }
+
+ .popular-product-list {
+  display: flex;
+  justify-content: space-between;
+ }
+
+.popular-products a {
+  text-decoration: none;
+}
+
+.product-card {
+  text-align: center;
+  width: 270px;
+}
+
+.product-card-title {
+  color: rgba(45, 52, 64, 1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.product-card-description {
+  color: rgba(86, 92, 102, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.product-card-price {
+  color: rgba(45, 52, 64, 1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.advantages {
+  background-color: rgba(217, 217, 217, 1);
+  background-image: url("../images/waffle-background.jpg");
+  background-size: 38 38 auto;
+  background-repeat: repeat;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.advantages-item {
+  width: 505.5px
+}
+
+.two-slabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-item {
+  width: 570px;
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url("../images/background-blog-.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+
+.blog-article-subtitle {
+  color: rgba(86, 92, 102, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.blog-article-title {
+  color: rgba(45, 52, 64, 1);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.blog-article-link {
+  text-decoration: none;
+}
+
+.subscribe {
+  width: 570px;
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url("../images/background-stripes.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.subscribe-description {
+  text-align: left;
+}
+
+.appointment {
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url("../images/background-appointment.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.appointment-title, .inner-header-title {
+  text-align: left;
+}
+
+.appointment-description {
+  color: rgba(86, 92, 102, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+
+.appointment-form-place {
+  background-color: rgba(252, 252, 252, 1);
+}
+
+.form-label, .appointment-form-phone {
+  color: rgba(45, 52, 64, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.contacts {
+  background-color: rgba(239, 226, 226, 1);
+  background-image: url("../images/background-contacts.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.contacts-address-text {
+  color: rgba(45, 52, 64, 1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.contacts-address a {
+  color: rgba(45, 52, 64, 1);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.contacts-extradescription {
+  color: rgba(86, 92, 102, 1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  width: 104px;
+}
+
+.footer-navigation {
+  width: 356px;
+}
+
+.about-developer {
+  width: 193px;
+}
+
+.htmlacademy-link {
+  color: rgba(45, 52, 64, 1);
+}
+
+.about-text {
+  color: rgba(45, 52, 64, 1);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.breadcrumbs {
+  color: rgba(45, 52, 64, 1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+li.breadcrumbs-item:nth-child(3) {
+  text-decoration: underline;
+}
+.select-control, .catalog-filter-title {
+  color: rgba(45, 52, 64, 1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.filter-button {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(45, 52, 64, 1);
+  background-color: rgba(252, 252, 252, 0.3);
+  border:0;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pagination {
+  color: rgba(45, 52, 64, 1);
+  background-color: rgba (0, 0, 0, 0);
+}
+
+.pagination-link {
+  color: rgba(45, 52, 64, 1);
+  background-color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.pagination-current {
+  background-color: rgba(252, 252, 252, 1);
+}
