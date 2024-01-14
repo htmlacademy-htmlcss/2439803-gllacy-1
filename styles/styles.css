@@ -23,6 +23,11 @@
 }
 
 body {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -31,12 +36,76 @@ body {
   background-color: rgba(254, 175, 195, 1);
 }
 
-.page-header, .page-footer {
+html {
+  height: 100%;
+}
+
+/*Можно ли указывать высоту хэдера, ведь главная направляющая в body идёт вертикально?*/
+header {
+  height: 104px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+
+/**
+.menu-container {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+**/
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+.left-menu-container {
+  width: 575px;
+  margin: 24px 0;
+}
+
+.right-menu-container {
+  width: 431px;
+  margin: 24px 0;
+}
+**/
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.slider {
+  padding-bottom: 80px;
+}
+
+.page-header {
+  display: flex;
   color: rgba(45, 52, 64, 1);
   background: rgba (0, 0, 0, 0);
 }
 
+.navigation-logo {
+  width: 137px;
+}
 
+.header-navigation {
+  width: 450px;
+}
+
+.user-header-navigation {
+  width: 267px;
+}
+
+.page-footer {
+  color: rgba(45, 52, 64, 1);
+  background: rgba (0, 0, 0, 0);
+}
 
 header .navigation-link {
   font-family: Inter, sans-serif;
@@ -58,6 +127,19 @@ header .contacts-phone {
   font-weight: 700;
   line-height: 20px;
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .banner-product-list {
@@ -108,30 +190,34 @@ header .contacts-phone {
 
 .stocks {
   color: rgba(45, 52, 64, 1);
+  padding-bottom: 80px;
 }
 
+.stocks-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
 
-.stocks-list-title {
-  text-align:center;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 46px;
-  list-style: none;
+.stocks-item {
+  width: 570px;
 }
 
 .stocks-item {
   text-align: left;
 }
 
-.seсtion-title {
+.section-title {
+  color: rgba(45, 52, 64, 1);
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
+  text-align: center;
 }
 
-/**Академия примет такие селекторы или как и по id нельзя?*/
+/**Академия не примет, замени на отдельные теги*/
 li.stocks-item:first-child {
  background-color: rgba(255, 119, 153, 1);
  background-image: url("../images/stock-images/raspberries-for-free.png");
@@ -146,23 +232,18 @@ li.stocks-item:nth-child(2) {
   background-position: right;
  }
 
-.product-list-title {
-  text-align: center; /**почему-то не выравнивается по центру. Хотела объединить сo .stocks-list-item, но результат тот же*/
-  color: rgba(45, 52, 64, 1);
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 46px;
-}
+ .popular-product-list {
+  display: flex;
+  justify-content: space-between;
+ }
 
 .popular-products a {
   text-decoration: none;
 }
 
-
-
 .product-card {
   text-align: center;
+  width: 270px;
 }
 
 .product-card-title {
@@ -196,16 +277,28 @@ li.stocks-item:nth-child(2) {
   background-repeat: repeat;
 }
 
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.advantages-item {
+  width: 505.5px
+}
+
+.two-slabs {
+  display: flex;
+  justify-content: space-between;
+}
 
 .blog-item {
+  width: 570px;
   background-color: rgba(255, 255, 255, 1);
   background-image: url("../images/background-blog-.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.blog-item {
   text-align: left;
 }
 
@@ -230,6 +323,7 @@ li.stocks-item:nth-child(2) {
 }
 
 .subscribe {
+  width: 570px;
   background-color: rgba(255, 255, 255, 1);
   background-image: url("../images/background-stripes.jpg");
   background-size: cover;
@@ -305,6 +399,23 @@ li.stocks-item:nth-child(2) {
   line-height: 20px;
 }
 
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  width: 104px;
+}
+
+.footer-navigation {
+  width: 356px;
+}
+
+.about-developer {
+  width: 193px;
+}
+
 .htmlacademy-link {
   color: rgba(45, 52, 64, 1);
 }
@@ -353,6 +464,12 @@ li.breadcrumbs-item:nth-child(3) {
 
 .product-card-link {
   text-decoration: none;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .pagination {
