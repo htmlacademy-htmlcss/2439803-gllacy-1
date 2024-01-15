@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -63,50 +63,44 @@
           <section class="product-gallery">
             <h2 class="visually-hidden">Вкусное мороженое</h2>
             <ul class="banner-product-list">
-              <li class="banner-product-item">
-                <h3 class="banner-product-title">
-                  Нежный пломбир<br />
-                  с клубничным джемом
-                </h3>
-                <p class="banner-product-description">
-                  Натуральное мороженое из свежих сливок <br />и молока с
-                  вкуснейшим клубничным джемом – <br />это идеальный десерт для
-                  всей семьи.
-                </p>
-                <img
-                  class="banner-product-image"
-                  src="files/banner-product-images/ice-cream-with-strawberry-jam.png"
-                  width="327.154px"
-                  height="507px"
-                  alt="Нежный пломбир с клубничным джемом"
-                />
-                <a class="button" href="#">Заказать</a>
-                <button class="slider-button slider-prev" type="button">
-                  <span class="visually-hidden">Предыдущий товар</span>
-                </button>
-                <button class="slider-button slider-next" type="button">
-                  <span class="visually-hidden">Следующий товар</span>
-                </button>
-                <ul class="slider-pagination">
-                  <li class="slider-pagination-item">
-                    <button
-                      class="slider-pagination-button slider-pagination-button-current"
-                      type="button"
-                    >
-                      <span class="visually-hidden">1 товар</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">2 товар</span>
-                    </button>
-                  </li>
-                  <li class="slider-pagination-item">
-                    <button class="slider-pagination-button" type="button">
-                      <span class="visually-hidden">3 товар</span>
-                    </button>
-                  </li>
-                </ul>
+              <li class="banner-product-item banner-product-item-current">
+                <div class="banner-product">
+                <div class="banner-product-item-wrapper">
+                  <h3 class="banner-product-title">
+                    Нежный пломбир<br />
+                    с клубничным джемом
+                  </h3>
+                  <p class="banner-product-description">
+                    Натуральное мороженое из свежих сливок <br />и молока с
+                    вкуснейшим клубничным джемом – <br />это идеальный десерт для
+                    всей семьи.
+                  </p>
+                  <a class="button" href="#">Заказать</a>
+                </div>
+                <div class="banner-product-image-wrapper">
+                  <img
+                      class="banner-product-image-big"
+                      src="files/banner-product-images/ice-cream-with-strawberry-jam.png"
+                      width="327.154px"
+                      height="507px"
+                      alt="Нежный пломбир с клубничным джемом"
+                    />
+                    <img
+                    class="banner-product-image"
+                    src="files/banner-product-images/banana-ice-cream.png"
+                    width="327.154px"
+                    height="507px"
+                    alt="Сливочное мороженое со вкусом банана"
+                  />
+                  <img
+                    class="banner-product-image"
+                    src="files/banner-product-images/caramel-ice-cream-with-marshmallows.png"
+                    width="327.154px"
+                    height="507px"
+                    alt="Карамельный пломбир с маршмеллоу"
+                  />
+                </div>
+                </div>
               </li>
               <li class="banner-product-item">
                 <h3 class="banner-product-title">
@@ -117,13 +111,28 @@
                   Сливочное мороженое с ярким банановым <br />вкусом подарит вам
                   свежесть и наслаждение <br />даже в самый жаркий летний день.
                 </p>
+                <a class="button" href="#">Заказать</a>
                 <img
-                  class="banner-product-image"
+                  class="banner-product-image-big"
                   src="files/banner-product-images/banana-ice-cream.png"
                   width="327.154px"
                   height="507px"
                   alt="Сливочное мороженое со вкусом банана"
                 />
+                <img
+                  class="banner-product-image"
+                  src="files/banner-product-images/caramel-ice-cream-with-marshmallows.png"
+                  width="327.154px"
+                  height="507px"
+                  alt="Карамельный пломбир с маршмеллоу"
+                />
+                <img
+                    class="banner-product-image"
+                    src="files/banner-product-images/ice-cream-with-strawberry-jam.png"
+                    width="327.154px"
+                    height="507px"
+                    alt="Нежный пломбир с клубничным джемом"
+                  />
               </li>
               <li class="banner-product-item">
                 <h3 class="banner-product-title">
@@ -135,40 +144,81 @@
                   кусочками зефира завоюет <br />сердца сладкоежек всех
                   возрастов.
                 </p>
+                <a class="button" href="#">Заказать</a>
                 <img
-                  class="banner-product-image"
+                  class="banner-product-image-big"
                   src="files/banner-product-images/caramel-ice-cream-with-marshmallows.png"
                   width="327.154px"
                   height="507px"
                   alt="Карамельный пломбир с маршмеллоу"
                 />
-                <a class="button" href="#">Заказать</a>
+                <img
+                    class="banner-product-image"
+                    src="files/banner-product-images/ice-cream-with-strawberry-jam.png"
+                    width="327.154px"
+                    height="507px"
+                    alt="Нежный пломбир с клубничным джемом"
+                  />
+                <img
+                  class="banner-product-image"
+                  src="files/banner-product-images/banana-ice-cream.png"
+                  width="327.154px"
+                  height="507px"
+                  alt="Сливочное мороженое со вкусом банана"
+                />
               </li>
             </ul>
-          </section>
-          <section class="social-buttons">
-            <h2 class="visually-hidden">Социальные сети</h2>
-            <ul class="social-list">
-              <li class="social-item">
-                <a class="button" href="https://t.me/htmlacademy">
-                  <span class="visually-hidden">Телеграм</span>
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="button" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">ВКонтакте</span>
-                </a>
-              </li>
-              <li class="social-item">
-                <a
-                  class="button"
-                  href="https://www.youtube.com/user/htmlacademyru"
-                >
-                  <span class="visually-hidden">Ютуб</span>
-                </a>
-              </li>
-            </ul>
-          </section>
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий товар</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующий товар</span>
+            </button>
+            <div class="slider-bottom-buttons">
+              <ul class="slider-pagination">
+                <li class="slider-pagination-item">
+                  <button
+                    class="slider-pagination-button slider-pagination-button-current"
+                    type="button"
+                  >
+                    <span class="visually-hidden">1 товар</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">2 товар</span>
+                  </button>
+                </li>
+                <li class="slider-pagination-item">
+                  <button class="slider-pagination-button" type="button">
+                    <span class="visually-hidden">3 товар</span>
+                  </button>
+                </li>
+              </ul>
+              <section class="social-buttons">
+                <h2 class="visually-hidden">Социальные сети</h2>
+                <ul class="social-list">
+                  <li class="social-item">
+                    <a class="button" href="https://t.me/htmlacademy">
+                      <span class="visually-hidden">Телеграм</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a class="button" href="https://vk.com/htmlacademy">
+                      <span class="visually-hidden">ВКонтакте</span>
+                    </a>
+                  </li>
+                  <li class="social-item">
+                    <a
+                      class="button"
+                      href="https://www.youtube.com/user/htmlacademyru"
+                    >
+                      <span class="visually-hidden">Ютуб</span>
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            </div>
         </div>
         <section class="stocks">
           <h2 class="visually-hidden">Акции</h2>
