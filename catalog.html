@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -14,7 +13,7 @@
       <a class="navigation-logo" href="/index.html">
         <img class="page-header-logo" src="files/logo.svg" width="137" height="55,72" alt="Логотип Глейси">
       </a>
-      <nav class="navigation">
+      <nav class="navigation header-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
@@ -30,7 +29,7 @@
       <a class="contacts-phone" href="tel:+78005558628">
         <b>+7 800 555-86-28</b>
       </a>
-      <nav class="navigation">
+      <nav class="navigation user-header-navigation">
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link button" href="#">
@@ -55,7 +54,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
       <header class="inner-header">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -281,29 +280,31 @@
             </a>
           </li>
         </ul>
-        <button class="button" type="button">Показать ещё</button>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Следующая страница</span>
-            </a>
-          </li>
-        </ul>
+        <div class="pagination-wrapper">
+          <button class="button" type="button">Показать ещё</button>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">5</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next" href="#">
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -321,35 +322,51 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="button" href="#">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
         </ul>
       </section>
-      <nav class="navigation">
+      <nav class="navigation footer-navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="about.html">
-              <b>Для поставщиков</b>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О производстве</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Наши документы</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Экологические стандарты</a>
-          </li>
+          <div class="footer-navigation-column-1">
+            <li class="navigation-item">
+              <a class="navigation-link" href="about.html">
+                <b>Для поставщиков</b>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О производстве</a>
+            </li>
+          </div>
+          <div class="footer-navigation-column-2">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Наши документы</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Экологические стандарты</a>
+            </li>
+          </div>
         </ul>
       </nav>
       <section class="about-developer">
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-        <img class="developer-logo" src="files/logo_htmlacademy.svg" width="93px" height="26.711px" alt="Логотип .html Academy">
+          <img
+            class="developer-logo"
+            src="files/logo_htmlacademy.svg"
+            width="93"
+            height="26"
+            alt="Логотип .html Academy"
+          />
         </a>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
+        <p class="about-text">
+          Сделано в
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/"
+            >.html academy</a
+          >
+          &#169; 2021
+        </p>
       </section>
     </footer>
   </body>

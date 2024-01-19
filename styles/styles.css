@@ -23,6 +23,11 @@
 }
 
 body {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: Inter, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -31,18 +36,83 @@ body {
   background-color: rgba(254, 175, 195, 1);
 }
 
-.page-header, .page-footer {
+html {
+  height: 100%;
+} /*sticky-footer не работает почему-то*/
+
+
+/*Можно ли указывать высоту хэдера, ведь главная направляющая в body идёт вертикально?*/
+header {
+  height: 104px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+
+/**
+.menu-container {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+**/
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.slider {
+  padding-bottom: 80px;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
   color: rgba(45, 52, 64, 1);
   background: rgba (0, 0, 0, 0);
 }
 
+.navigation-logo {
+  width: 137px;
+}
 
+.header-navigation {
+  width: 450px;
+  margin-left: 16px;
+}
 
-header .navigation-link {
+.user-header-navigation {
+  width: 267px;
+  margin-left: 16px;
+}
+
+.page-footer {
+  color: rgba(45, 52, 64, 1);
+  background: rgba (0, 0, 0, 0);
+}
+
+.header-navigation .navigation-link {
+  display: block;
+  text-decoration: none;
+}
+
+.navigation-link {
+  display: block;
   font-family: Inter, sans-serif;
   line-height: 20px;
   color: rgba(45, 52, 64, 1);
   text-decoration: none;
+  padding: 8px 16px;
 }
 
 footer .navigation-link {
@@ -51,6 +121,7 @@ footer .navigation-link {
   line-height: 20px;
   color: rgba(45, 52, 64, 1);
   text-decoration: none;
+  padding: 0;
 }
 
 header .contacts-phone {
@@ -58,6 +129,60 @@ header .contacts-phone {
   font-weight: 700;
   line-height: 20px;
   text-decoration: none;
+  margin-left: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.banner-product-item {
+  display: none;
+}
+
+.banner-product-item-current {
+  display: block;
+}
+
+.banner-product-item-wrapper {
+  display:flex;
+  flex-direction: column;
+  width: 470px;
+  justify-content: center;
+}
+
+.banner-product-image-wrapper {
+  display:flex;
+  width: 625px;
+  align-items: center;
+}
+
+.banner-product {
+  display:flex
+}
+
+.banner-product-image {
+  width: 100px;
+  height: 150px;
+}
+
+.banner-product-image-big {
+  width: 327px;
+  height: 507px;
+}
+
+.slider-bottom-buttons {
+  display:flex;
+  justify-content: space-between;
 }
 
 .banner-product-list {
@@ -71,6 +196,9 @@ header .contacts-phone {
   font-style: normal;
   font-weight: 900;
   line-height: 46px;
+  padding-left: 0;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .banner-product-description {
@@ -78,10 +206,30 @@ header .contacts-phone {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 48px;
 }
 
-.slider-pagination, .social-list, .footer-social-list, .advantages-list, .popular-product-list, .navigation-list, .stocks-list, .catalog-filter-list, .product-list {
+.banner-product-item-wrapper .button {
+  padding: 12px 32px;
+  align-self: flex-start;
+}
+
+.social-item, .footer-social-item {
+  width: 24px;
+  height: 24px;
+}
+
+.social-list, .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 104px;
+  justify-content: space-between;
+}
+
+.slider-pagination, .social-list, .footer-social-list, .advantages-list, .popular-product-list, .navigation-list, .stocks-list, .catalog-filter-list, .product-list, .breadcrumbs {
   list-style: none;
+  padding-left: 0;
 }
 
 .button {
@@ -103,35 +251,64 @@ header .contacts-phone {
   color: rgba(252, 252, 252, 1);
   background-color: rgba(255, 47, 100, 1);
   border: 0;
+  padding: 12px 32px;
+  margin-top: 32px;
 }
 
 
 .stocks {
   color: rgba(45, 52, 64, 1);
+  padding-bottom: 80px;
 }
 
-
-.stocks-list-title {
-  text-align:center;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 46px;
-  list-style: none;
+.stocks-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .stocks-item {
+  width: 317px;
+  padding: 36px 217px 36px 36px;
   text-align: left;
 }
 
-.seсtion-title {
+.stocks-item a {
+  display: inline-block;
+}
+
+.stocks-description {
+  display: block;
+  width: 304px;
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.stocks-title {
+  margin: 0;
+}
+
+.stocks-item .button {
+  padding: 12px 32px;
+}
+
+.section-title {
+  color: rgba(45, 52, 64, 1);
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
+  text-align: center;
 }
 
-/**Академия примет такие селекторы или как и по id нельзя?*/
+.stocks .section-title {
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+/**Академия не примет, замени на отдельные теги*/
 li.stocks-item:first-child {
  background-color: rgba(255, 119, 153, 1);
  background-image: url("../images/stock-images/raspberries-for-free.png");
@@ -146,23 +323,39 @@ li.stocks-item:nth-child(2) {
   background-position: right;
  }
 
-.product-list-title {
-  text-align: center; /**почему-то не выравнивается по центру. Хотела объединить сo .stocks-list-item, но результат тот же*/
-  color: rgba(45, 52, 64, 1);
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 46px;
+.popular-products .section-title {
+  margin: 0;
+  margin-bottom: 56px;
 }
+
+ .popular-product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+ }
 
 .popular-products a {
   text-decoration: none;
 }
 
-
+.popular-products {
+  margin-bottom: 80px;
+}
 
 .product-card {
   text-align: center;
+  width: 270px;
+  margin-right: 30px;
+}
+
+.product-card-purchase {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.product-card:nth-child(4n) {
+  margin-right: 0;
 }
 
 .product-card-title {
@@ -171,6 +364,7 @@ li.stocks-item:nth-child(2) {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+  margin: 0 0 8px 0;
 }
 
 .product-card-description {
@@ -179,6 +373,7 @@ li.stocks-item:nth-child(2) {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+  margin: 0 0 16px 0;
 }
 
 .product-card-price {
@@ -190,23 +385,66 @@ li.stocks-item:nth-child(2) {
 }
 
 .advantages {
+  display:flex;
+  flex-direction: column;
   background-color: rgba(217, 217, 217, 1);
   background-image: url("../images/waffle-background.jpg");
   background-size: 38 38 auto;
   background-repeat: repeat;
+  padding: 80px 63px;
+  margin-bottom: 80px;
 }
 
+.advantages .section-title {
+  display:block;
+
+  margin-bottom: 56px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+}
+
+.advantages-item {
+  width: 505.5px;
+  margin-right: 32px;
+}
+
+.advantages-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.advantages-item:nth-child(3) {
+  margin-top: 40px;
+}
+
+.advantages-item:nth-child(4) {
+  margin-top: 40px;
+}
+
+.two-slabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
 
 .blog-item {
+  width: 303px;
   background-color: rgba(255, 255, 255, 1);
   background-image: url("../images/background-blog-.jpg");
-  background-size: cover;
+  background-size: top;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.blog-item {
   text-align: left;
+  padding: 33px 235px 67px 32px
 }
 
 .blog-article-subtitle {
@@ -215,6 +453,8 @@ li.stocks-item:nth-child(2) {
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .blog-article-title {
@@ -230,15 +470,26 @@ li.stocks-item:nth-child(2) {
 }
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
+  width: 506px;
   background-color: rgba(255, 255, 255, 1);
   background-image: url("../images/background-stripes.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 32px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
 }
 
 .subscribe-description {
   text-align: left;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .appointment {
@@ -246,10 +497,23 @@ li.stocks-item:nth-child(2) {
   background-image: url("../images/background-appointment.jpg");
   background-size: auto;
   background-repeat: no-repeat;
+  display: flex;
+  padding: 64px 64px 64px 100px;
+  margin-bottom: 80px;
 }
 
 .appointment-title, .inner-header-title {
   text-align: left;
+}
+
+.seсtion-title.appointment-title {
+  color: rgba(45, 52, 64, 1);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .appointment-description {
@@ -259,11 +523,28 @@ li.stocks-item:nth-child(2) {
   font-weight: 400;
   line-height: 22px;
   text-align: left;
+  margin: 0;
+}
+
+.appointment-text-wrapper {
+  width: 371px;
 }
 
 .appointment-form-place {
   background-color: rgba(252, 252, 252, 1);
+  width: 500px;
+  padding: 40px 40px 42px;
+  margin-left: 135px;
 }
+
+.appointment-form p {
+  margin: 0;
+}
+.appointment-subdescription {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
 
 .form-label, .appointment-form-phone {
   color: rgba(45, 52, 64, 1);
@@ -278,15 +559,26 @@ li.stocks-item:nth-child(2) {
   background-image: url("../images/background-contacts.jpg");
   background-size: auto;
   background-repeat: no-repeat;
+  padding: 104px 803px 104px 104px;
 }
 
-.contacts-address-text {
+.contacts p {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.contacts-address .contacts-address-text {
   color: rgba(45, 52, 64, 1);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+  margin-bottom: 24px;
 }
+
+ .contacts .contacts-extradescription {
+   margin-bottom: 32px;
+ }
 
 .contacts-address a {
   color: rgba(45, 52, 64, 1);
@@ -303,6 +595,30 @@ li.stocks-item:nth-child(2) {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 0;
+}
+
+.footer-social {
+  width: 104px;
+}
+
+.footer-navigation {
+  width: 356px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-navigation-column-2 {
+  padding-left: 24px;
+}
+
+.about-developer {
+  width: 193px;
 }
 
 .htmlacademy-link {
@@ -323,11 +639,28 @@ li.stocks-item:nth-child(2) {
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
+  margin: 0;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.inner-header .seсtion-title {
+  margin: 0;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 46px;
+  color: rgba(45, 52, 64, 1);
+}
+
+.catalog-products {
+  margin-top: 40px;
 }
 
 .breadcrumbs-link {
   color: inherit;
   text-decoration: none;
+  margin-right: 32px
 }
 
 li.breadcrumbs-item:nth-child(3) {
@@ -340,6 +673,11 @@ li.breadcrumbs-item:nth-child(3) {
   font-weight: 400;
   line-height: 20px;
 }
+
+.catalog-filter {
+  margin-bottom: 46px;
+}
+
 .filter-button {
   font-family: Inter;
   font-size: 14px;
@@ -355,12 +693,36 @@ li.breadcrumbs-item:nth-child(3) {
   text-decoration: none;
 }
 
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+  height: 98px;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
 .pagination {
   color: rgba(45, 52, 64, 1);
-  background-color: rgba (0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-left: 335px;
+  display: flex;
+}
+
+.pagination-wrapper .button {
+  padding: 12px 32px;
 }
 
 .pagination-link {
+  display: block;
   color: rgba(45, 52, 64, 1);
   background-color: inherit;
   text-decoration: none;
@@ -368,6 +730,7 @@ li.breadcrumbs-item:nth-child(3) {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  padding: 2px 7px;
 }
 
 .pagination-current {
