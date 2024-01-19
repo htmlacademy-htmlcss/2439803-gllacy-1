@@ -280,29 +280,31 @@
             </a>
           </li>
         </ul>
-        <button class="button" type="button">Показать ещё</button>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">5</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Следующая страница</span>
-            </a>
-          </li>
-        </ul>
+        <div class="pagination-wrapper">
+          <button class="button" type="button">Показать ещё</button>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">5</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-next" href="#">
+                <span class="visually-hidden">Следующая страница</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -320,7 +322,7 @@
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="button" href="#">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
@@ -328,27 +330,43 @@
       </section>
       <nav class="navigation footer-navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="about.html">
-              <b>Для поставщиков</b>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О производстве</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Наши документы</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Экологические стандарты</a>
-          </li>
+          <div class="footer-navigation-column-1">
+            <li class="navigation-item">
+              <a class="navigation-link" href="about.html">
+                <b>Для поставщиков</b>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О производстве</a>
+            </li>
+          </div>
+          <div class="footer-navigation-column-2">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Наши документы</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Экологические стандарты</a>
+            </li>
+          </div>
         </ul>
       </nav>
       <section class="about-developer">
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-        <img class="developer-logo" src="files/logo_htmlacademy.svg" width="93px" height="26.711px" alt="Логотип .html Academy">
+          <img
+            class="developer-logo"
+            src="files/logo_htmlacademy.svg"
+            width="93"
+            height="26"
+            alt="Логотип .html Academy"
+          />
         </a>
-        <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a> &#169; 2021</p>
+        <p class="about-text">
+          Сделано в
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/"
+            >.html academy</a
+          >
+          &#169; 2021
+        </p>
       </section>
     </footer>
   </body>
