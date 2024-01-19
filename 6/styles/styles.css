@@ -274,12 +274,16 @@ header .contacts-phone {
   text-align: left;
 }
 
+.stocks-item a {
+  display: inline-block;
+}
+
 .stocks-description {
   display: block;
   width: 304px;
   margin: 0;
   margin-top: 28px;
-  margin-bottom: 40px; /**здесь margin съедает padding кнопки, пожтому добавляем в margin 12px padding-а кнопки?*/
+  margin-bottom: 28px;
 }
 
 .stocks-title {
@@ -387,12 +391,13 @@ li.stocks-item:nth-child(2) {
   background-image: url("../images/waffle-background.jpg");
   background-size: 38 38 auto;
   background-repeat: repeat;
+  padding: 80px 63px;
   margin-bottom: 80px;
 }
 
 .advantages .section-title {
   display:block;
-  margin-top: 80px;
+
   margin-bottom: 56px;
   font-size: 32px;
   font-style: normal;
@@ -406,7 +411,6 @@ li.stocks-item:nth-child(2) {
   align-items: flex-start;
   justify-content: center;
   margin: 0;
-  margin-bottom: 80px;
 }
 
 .advantages-item {
@@ -468,12 +472,13 @@ li.stocks-item:nth-child(2) {
 .subscribe {
   display: flex;
   flex-direction: column;
-  width: 570px;
+  width: 506px;
   background-color: rgba(255, 255, 255, 1);
   background-image: url("../images/background-stripes.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 32px;
 }
 
 .subscribe-form {
@@ -484,7 +489,7 @@ li.stocks-item:nth-child(2) {
 .subscribe-description {
   text-align: left;
   margin: 0;
-  margin: 32px 32px 42px 32px;
+  margin-bottom: 32px;
 }
 
 .appointment {
@@ -704,7 +709,7 @@ li.breadcrumbs-item:nth-child(3) {
 
 .pagination {
   color: rgba(45, 52, 64, 1);
-  background-color: rgba (0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   list-style: none;
   padding-left: 0;
   margin: 0;
