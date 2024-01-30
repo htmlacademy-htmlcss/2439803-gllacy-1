@@ -34,6 +34,7 @@ body {
   line-height: 22px;
   color: rgba(86, 92, 102, 1);
   background-color: rgba(254, 175, 195, 1);
+  position: relative;
 }
 
 html {
@@ -91,10 +92,292 @@ header {
   margin-left: 16px;
 }
 
+.navigation-item {
+  position: relative;
+}
+
 .user-header-navigation {
   width: 267px;
   margin-left: 16px;
 }
+
+/*Выпадающее меню каталога*/
+
+.catalog-pop-over {
+  background-color: rgba(252, 252, 252, 1);
+  width: 135px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding: 8px 0;
+  display: none;
+}
+
+.catalog-pop-over-list hr { /*эта полоска странно выглядит на странице*/
+  margin: 4px 16px;
+  color: rgba(185, 185, 185, 1);
+  height: 1px;
+  width: 103px;
+}
+
+.catalog-pop-over-item {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(45, 52, 64, 1);
+  padding-left: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.catalog-pop-over-item .navigation-link {
+  padding: 0;
+}
+
+/*Выпадающее окно входа в аккаунт*/
+
+.pop-over-personal-account {
+  position: absolute;
+  display: none;
+  width: 420px;
+  padding: 48px 48px 52px;
+  background-color: rgba(252, 252, 252, 1);
+  right: 0;
+  top: 40px;
+}
+
+.personal-account-form input {
+  padding: 0;
+}
+
+.personal-account-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-over-personal-account-wrapper {
+  display: grid;
+  grid-template-columns: 113px 23px 113px 1fr;
+  grid-template-rows: 20px 4px 20px;
+  margin-top: 32px;
+}
+
+.pop-over-personal-account-wrapper .additional-button {
+  grid-row: 1/4;
+  grid-column: 1/2;
+}
+
+.other-actions-list {
+  grid-row: 1/4;
+  grid-column: 3/4;
+}
+
+.other-actions-link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(45, 52, 64, 1);
+}
+
+.personal-account-form input:nth-child(1) {
+  margin-bottom: 16px;
+}
+
+/*Выпадающее окно поиска*/
+
+.search-form {
+  position: absolute;
+  display: none;
+  width: 356px;
+  padding: 24px 16px;
+  background-color: rgba(252, 252, 252, 1);
+  right: 0;
+  top: 40px;
+}
+
+/*Выпадающее окно корзины*/
+
+.pop-over-cart {
+  display: none;
+  position: absolute;
+  background-color: rgba(252, 252, 252, 1);
+  width: 441px;
+  padding: 48px;
+  right: 0;
+  top: 40px;
+}
+
+.pop-over-cart-title, .pop-over-cart-empty-title, .personal-account-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgba(45, 52, 64, 1);
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.pop-over-cart-product-title, .pop-over-cart-product-price, .pop-over-cart-sum {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  color: rgba(45, 52, 64, 1);
+}
+
+.pop-over-cart-product-title {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin: 0;
+}
+
+.pop-over-cart-product-calculation {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(185, 185, 185, 1);
+  grid-column: 3/4;
+  grid-row: 3/4;
+  margin: 0;
+}
+
+.pop-over-cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pop-over-cart-item:nth-child(1) {
+  margin-bottom: 24px;
+}
+
+ .pop-over-cart hr {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: rgba(231, 231, 231, 1);
+  height: 1px;
+}
+
+.summary-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop-over-cart-product-price {
+  margin-right: 52px;
+}
+
+.pop-over-cart-product-wrapper {
+  display: grid;
+  grid-template-columns: 46px 16px 190px;
+  grid-template-rows: 22px 4px 20px;
+}
+
+.pop-over-cart-image {
+  margin-right: 16px;
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.summary-wrapper .additional-button {
+  align-self: center;
+}
+
+.pop-over-cart-sum {
+  margin: 0;
+  margin-top: 11px;
+}
+
+.pop-over-cart-empty {
+  display: none;
+  position: absolute;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: rgba(252, 252, 252, 1);
+  width: 288px;
+  height: 56px;
+  right: 0px;
+  top: 40px;
+}
+
+.pop-over-cart-empty-title {
+  width: 288px;
+  text-align: center;
+}
+
+.closing-button {
+  background-color: rgba(252, 252, 252, 0);
+  background-image: url("../files/navigation-icons/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-decoration: none;
+  width: 16px;
+  height: 16px;
+  align-self: center;
+}
+
+/**/
+
+/*Поп-ап обратной связи*/
+
+.pop-up-feedback-title {
+  display: block;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgba(45, 52, 64, 1);
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.pop-up-feedback {
+  display: none;
+  position: absolute;
+  background-color: rgba(252, 252, 252, 1);
+  width: 570px;
+  height: 545px;
+  top: 2879px;
+  right: 398px;
+  left: 398px;
+  bottom: 493px;
+}
+
+.pop-up-feedback-wrapper {
+ display: flex;
+ flex-direction: column;
+ padding: 32px 32px 64px 64px;
+}
+
+.pop-up-feedback-wrapper .closing-button {
+  margin-left: auto;
+  margin-bottom: 12px;
+}
+
+.pop-up-feedback-form {
+  display: flex;
+  flex-direction: column;
+  width: 444px;
+}
+
+.pop-up-feedback-form input {
+  margin-bottom: 16px;
+  height: 48px;
+}
+
+.pop-up-feedback-form input:nth-child(3) {
+  margin-bottom: 32px;
+  height: 149px;
+}
+
+.pop-up-feedback-form .additional-button {
+  margin-left: auto;
+}
+
+/**/
 
 .page-footer {
   color: rgba(45, 52, 64, 1);
@@ -227,7 +510,7 @@ header .contacts-phone {
   justify-content: space-between;
 }
 
-.slider-pagination, .social-list, .footer-social-list, .advantages-list, .popular-product-list, .navigation-list, .stocks-list, .catalog-filter-list, .product-list, .breadcrumbs {
+.other-actions-list, .catalog-pop-over-list, .slider-pagination, .social-list, .footer-social-list, .advantages-list, .popular-product-list, .navigation-list, .stocks-list, .catalog-filter-list, .product-list, .breadcrumbs, .pop-over-cart-list {
   list-style: none;
   padding-left: 0;
 }
@@ -252,7 +535,6 @@ header .contacts-phone {
   background-color: rgba(255, 47, 100, 1);
   border: 0;
   padding: 12px 32px;
-  margin-top: 32px;
 }
 
 
@@ -329,10 +611,9 @@ li.stocks-item:nth-child(2) {
 }
 
  .popular-product-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: 30px;
  }
 
 .popular-products a {
@@ -344,6 +625,8 @@ li.stocks-item:nth-child(2) {
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   width: 270px;
   margin-right: 30px;
@@ -352,10 +635,19 @@ li.stocks-item:nth-child(2) {
 .product-card-purchase {
   display: flex;
   margin-bottom: 24px;
+  width: 190px;
+  justify-content: space-between;
+  align-self: center;
 }
 
-.product-card:nth-child(4n) {
-  margin-right: 0;
+.product-card-button {
+  background-color: rgba(255, 47, 100, 1);
+  background-image: url("../files/navigation-icons/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  height: 16px;
+  padding: 8px 8px;
 }
 
 .product-card-title {
@@ -385,8 +677,6 @@ li.stocks-item:nth-child(2) {
 }
 
 .advantages {
-  display:flex;
-  flex-direction: column;
   background-color: rgba(217, 217, 217, 1);
   background-image: url("../images/waffle-background.jpg");
   background-size: 38 38 auto;
@@ -396,38 +686,33 @@ li.stocks-item:nth-child(2) {
 }
 
 .advantages .section-title {
-  display:block;
-
-  margin-bottom: 56px;
+  display: block;
   font-size: 32px;
   font-style: normal;
   font-weight: 900;
   line-height: 46px;
-}
-
-.advantages-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
   margin: 0;
 }
 
-.advantages-item {
-  width: 505.5px;
-  margin-right: 32px;
+.advantages-list {
+  display: grid;
+  grid-template-columns: repeat(2, 505px);
+  margin: 0;
+  column-gap: 32px;
+  row-gap: 40px;
 }
 
-.advantages-item:nth-child(2n) {
-  margin-right: 0;
+.color-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  background-color: rgba(255, 255, 255, 1);
+  max-width: 1122px;
+  padding: 56px 40px;
 }
 
-.advantages-item:nth-child(3) {
-  margin-top: 40px;
-}
-
-.advantages-item:nth-child(4) {
-  margin-top: 40px;
+.advantages-description {
+  margin: 0;
 }
 
 .two-slabs {
@@ -470,20 +755,26 @@ li.stocks-item:nth-child(2) {
 }
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
-  width: 506px;
+  width: 558px;
   background-color: rgba(255, 255, 255, 1);
   background-image: url("../images/background-stripes.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 32px;
+  padding: 6px;
+}
+
+.subscribe-color-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 26px;
 }
 
 .subscribe-form {
   display: flex;
   justify-content: center;
+  gap: 14px;
 }
 
 .subscribe-description {
@@ -500,6 +791,7 @@ li.stocks-item:nth-child(2) {
   display: flex;
   padding: 64px 64px 64px 100px;
   margin-bottom: 80px;
+  gap: 135px;
 }
 
 .appointment-title, .inner-header-title {
@@ -530,21 +822,57 @@ li.stocks-item:nth-child(2) {
   width: 371px;
 }
 
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .appointment-form-place {
   background-color: rgba(252, 252, 252, 1);
-  width: 500px;
+  width: 420px;
   padding: 40px 40px 42px;
-  margin-left: 135px;
 }
 
 .appointment-form p {
   margin: 0;
 }
+
+.appointment-form-date {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 117px;
+}
+
+.appointment-form-phone {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 287px;
+}
+
+.appointment-form-adress {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 420px;
+}
+
+.appointment-form .appointment-form-adress {
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+.appointment-form .additional-button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .appointment-subdescription {
   margin: 0;
   margin-bottom: 32px;
 }
-
 
 .form-label, .appointment-form-phone {
   color: rgba(45, 52, 64, 1);
@@ -595,6 +923,10 @@ li.stocks-item:nth-child(2) {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+.contacts .additional-button {
+  display: block;
 }
 
 .page-footer {
@@ -694,9 +1026,10 @@ li.breadcrumbs-item:nth-child(3) {
 }
 
 .product-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: 30px;
+  row-gap: 40px;
 }
 
 .pagination-wrapper {
