@@ -10,7 +10,7 @@
 
   <body>
     <header class="page-header">
-      <a class="navigation-logo" href="#">
+      <a class="navigation-logo" href="index.html">
         <img
           class="page-header-logo"
           src="files/logo.svg"
@@ -21,10 +21,12 @@
       </a>
       <nav class="navigation header-navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
-             <svg class="header-navigation-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="17" fill="none" viewBox="0 0 16 17">
-              <path fill="#2D3440" fill-rule="evenodd" d="M3.8 7.05a.67.67 0 1 0-.93.95l4.66 4.66a.66.66 0 0 0 .95 0L13.14 8a.67.67 0 0 0-.94-.95L8 11.25l-4.2-4.2Z" clip-rule="evenodd"/></svg>
+          <li class="navigation-item navigation-current-item">
+            <a class="navigation-link" href="catalog.html">Каталог
+              <svg class="header-navigation-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="17" fill="none" viewBox="0 0 16 17">
+                <path fill="#2D3440" fill-rule="evenodd" d="M3.8 7.05a.67.67 0 1 0-.93.95l4.66 4.66a.66.66 0 0 0 .95 0L13.14 8a.67.67 0 0 0-.94-.95L8 11.25l-4.2-4.2Z" clip-rule="evenodd"/>
+               </svg>
+            </a>
             <div class="catalog-pop-over"> <!--здесь можно без дива, сразу список ставить?-->
               <h3 class="visually-hidden">Меню каталога</h3>
               <ul class="catalog-pop-over-list">
@@ -69,14 +71,19 @@
               </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
-            <form class="search-form" action="search" method="get">
-              <input type="search" placeholder="Поиск по сайту">
-            </form>
+            <div class="search-form-wrapper">
+              <form class="search-form" action="search" method="get">
+                <input type="search" placeholder="Поиск по сайту">
+              </form>
+            </div>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button" href="#">Вход</a>
-            <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="17" fill="none" viewBox="0 0 16 17">
-              <path fill="#2D3440" fill-rule="evenodd" d="M9 2.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3.86a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 2.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 12.33a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" clip-rule="evenodd"/></svg>
+            <a class="navigation-link button" href="#">
+              <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="17" fill="none" viewBox="0 0 16 17">
+                <path fill="#2D3440" fill-rule="evenodd" d="M9 2.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3.86a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 2.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 12.33a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" clip-rule="evenodd"/>
+              </svg>
+              Вход
+            </a>
             <div class="pop-over-personal-account">
               <h3 class="personal-account-title">Личный кабинет</h3>
               <form class="personal-account-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -437,7 +444,7 @@
           <button class="button" type="button">Показать ещё</button>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-prev" href="#">
+              <a class="pagination-link pagination-prev disabled-arrow" href="#">
                 <span class="visually-hidden">Предыдущая страница</span>
               </a>
             </li>
@@ -497,24 +504,18 @@
       </section>
       <nav class="navigation footer-navigation">
         <ul class="navigation-list">
-          <div class="footer-navigation-column-1">
-            <li class="navigation-item">
-              <a class="navigation-link" href="about.html">
-                <b>Для поставщиков</b>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О производстве</a>
-            </li>
-          </div>
-          <div class="footer-navigation-column-2">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Наши документы</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Экологические стандарты</a>
-            </li>
-          </div>
+          <li class="navigation-item favorite">
+            <a class="navigation-link" href="about.html">Для поставщиков</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О производстве</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Наши документы</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Экологические стандарты</a>
+          </li>
         </ul>
       </nav>
       <section class="about-developer">
@@ -536,5 +537,23 @@
         </p>
       </section>
     </footer>
+    <div class="pop-up-feedback">
+      <div class="pop-up-feedback-wrapper">
+        <button class="closing-button" type="button">
+          <span class="visually-hidden">
+            Закрыть
+          </span>
+        </button>
+        <h3 class="pop-up-feedback-title">Мы обязательно ответим вам!</h3>
+        <form class="pop-up-feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="text" name="pop-up-feedback-form-name" placeholder="Имя и фамилия">
+          <input type="email" name="pop-up-feedback-form-email" placeholder="email@example.com">
+          <input type="text" name="pop-up-feedback-form-comment" placeholder="В свободной форме">
+          <button class="button additional-button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

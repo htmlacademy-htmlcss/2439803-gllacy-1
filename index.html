@@ -9,7 +9,7 @@
 
   <body>
     <header class="page-header">
-      <a class="navigation-logo" href="#">
+      <a class="navigation-logo" href="">
         <img
           class="page-header-logo"
           src="files/logo.svg"
@@ -21,9 +21,11 @@
       <nav class="navigation header-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Каталог</a>
-             <svg class="header-navigation-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="17" fill="none" viewBox="0 0 16 17">
-              <path fill="#2D3440" fill-rule="evenodd" d="M3.8 7.05a.67.67 0 1 0-.93.95l4.66 4.66a.66.66 0 0 0 .95 0L13.14 8a.67.67 0 0 0-.94-.95L8 11.25l-4.2-4.2Z" clip-rule="evenodd"/></svg>
+            <a class="navigation-link" href="catalog.html">Каталог
+              <svg class="header-navigation-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="17" fill="none" viewBox="0 0 16 17">
+                <path fill="#2D3440" fill-rule="evenodd" d="M3.8 7.05a.67.67 0 1 0-.93.95l4.66 4.66a.66.66 0 0 0 .95 0L13.14 8a.67.67 0 0 0-.94-.95L8 11.25l-4.2-4.2Z" clip-rule="evenodd"/>
+               </svg>
+            </a>
             <div class="catalog-pop-over"> <!--здесь можно без дива, сразу список ставить?-->
               <h3 class="visually-hidden">Меню каталога</h3>
               <ul class="catalog-pop-over-list">
@@ -75,9 +77,12 @@
             </div>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link button" href="#">Вход</a>
-            <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="17" fill="none" viewBox="0 0 16 17">
-              <path fill="#2D3440" fill-rule="evenodd" d="M9 2.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3.86a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 2.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 12.33a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" clip-rule="evenodd"/></svg>
+            <a class="navigation-link button" href="#">
+              <svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="17" fill="none" viewBox="0 0 16 17">
+                <path fill="#2D3440" fill-rule="evenodd" d="M9 2.52c0-.36.3-.66.67-.66h2.66a2 2 0 0 1 2 2v9.33a2 2 0 0 1-2 2H9.67a.67.67 0 0 1 0-1.33h2.66a.67.67 0 0 0 .67-.67V3.86a.67.67 0 0 0-.67-.67H9.67A.67.67 0 0 1 9 2.52Zm-3.14 2.2a.67.67 0 0 1 .94 0l3.33 3.33a.69.69 0 0 1 .13.18.66.66 0 0 1-.13.77L6.8 12.33a.67.67 0 1 1-.94-.94l2.2-2.2h-6.4a.67.67 0 1 1 0-1.33h6.4l-2.2-2.2a.67.67 0 0 1 0-.94Z" clip-rule="evenodd"/>
+              </svg>
+              Вход
+            </a>
             <div class="pop-over-personal-account">
               <h3 class="personal-account-title">Личный кабинет</h3>
               <form class="personal-account-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -168,15 +173,42 @@
                       всей семьи.
                     </p>
                     <a class="button" href="#">Заказать</a>
+
+                    <!-- Кнопка <a class="button button-load" href="#">Заказать
+                      <svg class="button-load-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="16" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 17 16">
+                        <g stroke="#242424" stroke-linecap="round" stroke-width="2" clip-path="url(#a)">
+                          <circle cx="8.9" cy="8" r="7" opacity=".24"/>
+                          <path d="M15.9 8a7 7 0 0 0-7-7"/>
+                        </g>
+                        <defs>
+                          <clipPath id="a">
+                            <path fill="#fff" d="M.9 0h16v16H.9z"/>
+                          </clipPath>
+                       </defs>
+                      </svg>
+                    </a>-->
+
                   </div>
                   <div class="banner-product-image-wrapper">
-                    <img
-                        class="banner-product-image-big"
-                        src="files/banner-product-images/ice-cream-with-strawberry-jam.png"
-                        width="327.154px"
-                        height="507px"
-                        alt="Нежный пломбир с клубничным джемом"
-                      />
+                    <div class="banner-product-image-big-wrapper">
+                      <img
+                          class="banner-product-image-big"
+                          src="files/banner-product-images/ice-cream-with-strawberry-jam.png"
+                          width="327.154px"
+                          height="507px"
+                          alt="Нежный пломбир с клубничным джемом"
+                        />
+                        <button class="slider-button slider-prev" type="button">
+                          <svg class="slider-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="16" fill="none" viewBox="0 0 17 16">
+                            <path fill="#FCFCFC" fill-rule="evenodd" d="M9.71 13.14a.67.67 0 0 0 .94-.95L6.45 8l4.2-4.2a.66.66 0 0 0-.94-.94L5.04 7.52a.66.66 0 0 0 0 .94l4.67 4.68Z" clip-rule="evenodd"/></svg>
+                          <span class="visually-hidden">Предыдущий товар</span>
+                        </button>
+                        <button class="slider-button slider-next" type="button">
+                          <svg class="slider-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                            <path fill="#FCFCFC" fill-rule="evenodd" d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z" clip-rule="evenodd"/></svg>
+                          <span class="visually-hidden">Следующий товар</span>
+                        </button>
+                    </div>
                       <img
                       class="banner-product-image"
                       src="files/banner-product-images/banana-ice-cream.png"
@@ -208,13 +240,25 @@
                     <a class="button" href="#">Заказать</a>
                   </div>
                   <div class="banner-product-image-wrapper">
-                    <img
-                      class="banner-product-image-big"
-                      src="files/banner-product-images/banana-ice-cream.png"
-                      width="327.154px"
-                      height="507px"
-                      alt="Сливочное мороженое со вкусом банана"
-                    />
+                    <div class="banner-product-image-big-wrapper">
+                      <img
+                        class="banner-product-image-big"
+                        src="files/banner-product-images/banana-ice-cream.png"
+                        width="327.154px"
+                        height="507px"
+                        alt="Сливочное мороженое со вкусом банана"
+                      />
+                      <button class="slider-button slider-prev" type="button">
+                        <svg class="slider-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="16" fill="none" viewBox="0 0 17 16">
+                          <path fill="#FCFCFC" fill-rule="evenodd" d="M9.71 13.14a.67.67 0 0 0 .94-.95L6.45 8l4.2-4.2a.66.66 0 0 0-.94-.94L5.04 7.52a.66.66 0 0 0 0 .94l4.67 4.68Z" clip-rule="evenodd"/></svg>
+                        <span class="visually-hidden">Предыдущий товар</span>
+                      </button>
+                      <button class="slider-button slider-next" type="button">
+                        <svg class="slider-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                          <path fill="#FCFCFC" fill-rule="evenodd" d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z" clip-rule="evenodd"/></svg>
+                        <span class="visually-hidden">Следующий товар</span>
+                      </button>
+                  </div>
                     <img
                       class="banner-product-image"
                       src="files/banner-product-images/caramel-ice-cream-with-marshmallows.png"
@@ -247,13 +291,25 @@
                     <a class="button" href="#">Заказать</a>
                   </div>
                   <div class="banner-product-image-wrapper">
-                    <img
-                      class="banner-product-image-big"
-                      src="files/banner-product-images/caramel-ice-cream-with-marshmallows.png"
-                      width="327.154px"
-                      height="507px"
-                      alt="Карамельный пломбир с маршмеллоу"
-                    />
+                    <div class="banner-product-image-big-wrapper">
+                      <img
+                        class="banner-product-image-big"
+                        src="files/banner-product-images/caramel-ice-cream-with-marshmallows.png"
+                        width="327.154px"
+                        height="507px"
+                        alt="Карамельный пломбир с маршмеллоу"
+                      />
+                      <button class="slider-button slider-prev" type="button">
+                        <svg class="slider-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="16" fill="none" viewBox="0 0 17 16">
+                          <path fill="#FCFCFC" fill-rule="evenodd" d="M9.71 13.14a.67.67 0 0 0 .94-.95L6.45 8l4.2-4.2a.66.66 0 0 0-.94-.94L5.04 7.52a.66.66 0 0 0 0 .94l4.67 4.68Z" clip-rule="evenodd"/></svg>
+                        <span class="visually-hidden">Предыдущий товар</span>
+                      </button>
+                      <button class="slider-button slider-next" type="button">
+                        <svg class="slider-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                          <path fill="#FCFCFC" fill-rule="evenodd" d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z" clip-rule="evenodd"/></svg>
+                        <span class="visually-hidden">Следующий товар</span>
+                      </button>
+                    </div>
                     <img
                         class="banner-product-image"
                         src="files/banner-product-images/ice-cream-with-strawberry-jam.png"
@@ -272,21 +328,11 @@
                 </div>
               </li>
             </ul>
-            <button class="slider-button slider-prev" type="button">
-              <svg class="slider-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="16" fill="none" viewBox="0 0 17 16">
-                <path fill="#FCFCFC" fill-rule="evenodd" d="M9.71 13.14a.67.67 0 0 0 .94-.95L6.45 8l4.2-4.2a.66.66 0 0 0-.94-.94L5.04 7.52a.66.66 0 0 0 0 .94l4.67 4.68Z" clip-rule="evenodd"/></svg>
-              <span class="visually-hidden">Предыдущий товар</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <svg class="slider-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="16" fill="none" viewBox="0 0 16 16">
-                <path fill="#FCFCFC" fill-rule="evenodd" d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z" clip-rule="evenodd"/></svg>
-              <span class="visually-hidden">Следующий товар</span>
-            </button>
             <div class="slider-bottom-buttons">
               <ul class="slider-pagination">
-                <li class="slider-pagination-item">
+                <li class="slider-pagination-item slider-pagination-item-current">
                   <button
-                    class="slider-pagination-button slider-pagination-button-current"
+                    class="slider-pagination-button"
                     type="button"
                   >
                     <span class="visually-hidden">1 товар</span>
@@ -475,13 +521,6 @@
                 <h3 class="visually-hidden">
                   Налаженное собственное производство
                 </h3>
-                <img
-                  class="advantages-icon"
-                  src="images/icons/advantages-icons/icon-ice-cream.svg"
-                  width="32"
-                  height="32"
-                  alt="Мороженое"
-                />
                 <p class="advantages-description">
                   Всё наше мороженое изготавливается на собственном производстве с
                   использованием современного оборудования и проверенных временем
@@ -490,13 +529,6 @@
               </li>
               <li class="advantages-item">
                 <h3 class="visually-hidden">Сотрудничество с фермерствами</h3>
-                <img
-                  class="advantages-icon"
-                  src="images/icons/advantages-icons/icon-cow.svg"
-                  width="32"
-                  height="32"
-                  alt="Коровка"
-                />
                 <p class="advantages-description">
                   Закупка ингредиентов производится только у проверенных
                   фермерских хозяйств, с которыми нас связывает долговременное
@@ -505,13 +537,6 @@
               </li>
               <li class="advantages-item">
                 <h3 class="visually-hidden">Качественные ингредиенты</h3>
-                <img
-                  class="advantages-icon"
-                  src="images/icons/advantages-icons/icon-leaf.svg"
-                  width="32"
-                  height="32"
-                  alt="Листик"
-                />
                 <p class="advantages-description">
                   Для приготовления мороженого используются сливки и молоко
                   высочайшего качества. Все ингредиенты и добавки произведены из
@@ -521,13 +546,6 @@
 
               <li class="advantages-item">
                 <h3 class="visually-hidden">Доставка в термопаке</h3>
-                <img
-                  class="advantages-icon"
-                  src="images/icons/advantages-icons/icon-thermometer.svg"
-                  width="32"
-                  height="32"
-                  alt="Термометр"
-                />
                 <p class="advantages-description">
                   Доставка нашего мороженого осуществляется в специальном
                   термопаке, который не даёт мороженому растаять и позволяет
@@ -670,24 +688,18 @@
       </section>
       <nav class="navigation footer-navigation">
         <ul class="navigation-list">
-          <div class="footer-navigation-column-1">
-            <li class="navigation-item">
-              <a class="navigation-link" href="about.html">
-                <b>Для поставщиков</b>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О производстве</a>
-            </li>
-          </div>
-          <div class="footer-navigation-column-2">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Наши документы</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Экологические стандарты</a>
-            </li>
-          </div>
+          <li class="navigation-item favorite">
+            <a class="navigation-link" href="about.html">Для поставщиков</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О производстве</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Наши документы</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Экологические стандарты</a>
+          </li>
         </ul>
       </nav>
       <section class="about-developer">
