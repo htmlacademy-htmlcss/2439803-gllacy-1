@@ -72,7 +72,7 @@
             </a>
             <div class="search-form-wrapper">
               <form class="search-form" action="search" method="get">
-                <input type="search" placeholder="Поиск по сайту">
+                <input class="field" type="search" placeholder="Поиск по сайту">
               </form>
             </div>
           </li>
@@ -86,8 +86,8 @@
             <div class="pop-over-personal-account">
               <h3 class="personal-account-title">Личный кабинет</h3>
               <form class="personal-account-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input type="email" name="personal-account-form-email" placeholder="email@example.com">
-                <input type="password" name="personal-account-form-password" placeholder="123qwe">
+                <input class="field" type="email" name="personal-account-form-email" placeholder="email@example.com">
+                <input class="field" type="password" name="personal-account-form-password" placeholder="123qwe">
                 <div class="pop-over-personal-account-wrapper">
                   <button class="button additional-button" type="submit">Войти</button>
                   <ul class="other-actions-list">
@@ -209,20 +209,22 @@
                           <span class="visually-hidden">Следующий товар</span>
                         </button>
                     </div>
+                    <div class="banner-product-image-little-wrapper">
                       <img
                       class="banner-product-image"
                       src="files/banner-product-images/banana-ice-cream.png"
                       width="327.154px"
                       height="507px"
-                      alt="Сливочное мороженое со вкусом банана"
-                    />
-                    <img
+                      alt="Сливочное мороженое со вкусом банана"/>
+                    </div>
+                    <div class="banner-product-image-little-wrapper">
+                      <img
                       class="banner-product-image"
                       src="files/banner-product-images/caramel-ice-cream-with-marshmallows.png"
                       width="327.154px"
                       height="507px"
-                      alt="Карамельный пломбир с маршмеллоу"
-                    />
+                      alt="Карамельный пломбир с маршмеллоу"/>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -248,6 +250,7 @@
                         height="507px"
                         alt="Сливочное мороженое со вкусом банана"
                       />
+                    </div>
                       <button class="slider-button slider-prev" type="button">
                         <svg class="slider-button-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="16" fill="none" viewBox="0 0 17 16">
                           <path fill="#FCFCFC" fill-rule="evenodd" d="M9.71 13.14a.67.67 0 0 0 .94-.95L6.45 8l4.2-4.2a.66.66 0 0 0-.94-.94L5.04 7.52a.66.66 0 0 0 0 .94l4.67 4.68Z" clip-rule="evenodd"/></svg>
@@ -259,20 +262,18 @@
                         <span class="visually-hidden">Следующий товар</span>
                       </button>
                   </div>
-                    <img
-                      class="banner-product-image"
-                      src="files/banner-product-images/caramel-ice-cream-with-marshmallows.png"
-                      width="327.154px"
-                      height="507px"
-                      alt="Карамельный пломбир с маршмеллоу"
-                    />
+                   <img
+                        class="banner-product-image"
+                        src="files/banner-product-images/caramel-ice-cream-with-marshmallows.png"
+                        width="327.154px"
+                        height="507px"
+                        alt="Карамельный пломбир с маршмеллоу"/>
                     <img
                         class="banner-product-image"
                         src="files/banner-product-images/ice-cream-with-strawberry-jam.png"
                         width="327.154px"
                         height="507px"
-                        alt="Нежный пломбир с клубничным джемом"
-                      />
+                        alt="Нежный пломбир с клубничным джемом"/>
                   </div>
                 </div>
               </li>
@@ -290,7 +291,6 @@
                     </p>
                     <a class="button" href="#">Заказать</a>
                   </div>
-                  <div class="banner-product-image-wrapper">
                     <div class="banner-product-image-big-wrapper">
                       <img
                         class="banner-product-image-big"
@@ -577,7 +577,7 @@
                 action="https://echo.htmlacademy.ru/"
                 method="post"
               >
-                <input type="email" placeholder="email@example.com" />
+                <input class="field" type="email" placeholder="email@example.com" />
                 <button class="button additional-button" type="submit">
                   Отправить
                 </button>
@@ -608,30 +608,15 @@
             >
               <p class="appointment-form-date">
                 <label class="form-label" for="appointment-date">Дата</label>
-                <input
-                  type="text"
-                  id="appointment-date"
-                  name="appointment-date"
-                  placeholder="01.04.2020"
-                />
+                <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
               </p>
               <p class="appointment-form-phone">
                 <label for="appointment-form-phone">Телефон</label>
-                <input
-                  type="text"
-                  id="appointment-form-phone"
-                  name="appointment-form-phone"
-                  placeholder="+7 800 900-00-00"
-                />
+                <input class="field" type="text" id="appointment-form-phone" name="appointment-form-phone" placeholder="+7 800 900-00-00">
               </p>
               <p class="appointment-form-adress">
                 <label class="form-label" for="appointment-adress">Адрес</label>
-                <input
-                  type="text"
-                  id="appointment-adress"
-                  name="appointment-adress"
-                  placeholder="ул. Большая Конюшенная, 19/8"
-                />
+                <input class="field" type="text" id="appointment-adress" name="appointment-adress" placeholder="ул. Большая Конюшенная, 19/8">
               </p>
               <button class="button additional-button" type="submit">
                 Отправить
@@ -730,9 +715,9 @@
         </button>
         <h3 class="pop-up-feedback-title">Мы обязательно ответим вам!</h3>
         <form class="pop-up-feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input type="text" name="pop-up-feedback-form-name" placeholder="Имя и фамилия">
-          <input type="email" name="pop-up-feedback-form-email" placeholder="email@example.com">
-          <input type="text" name="pop-up-feedback-form-comment" placeholder="В свободной форме">
+          <input class="field" type="text" name="pop-up-feedback-form-name" placeholder="Имя и фамилия">
+          <input class="field" type="email" name="pop-up-feedback-form-email" placeholder="email@example.com">
+          <input class="field text-field" type="text" name="pop-up-feedback-form-comment" placeholder="В свободной форме">
           <button class="button additional-button" type="submit">
             Отправить
           </button>
