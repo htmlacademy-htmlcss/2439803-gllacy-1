@@ -244,6 +244,10 @@ header {
   border-radius: 4px;
 }
 
+.catalog-pop-over-open {
+  display: block;
+}
+
 .catalog-pop-over-list hr { /*эта полоска странно выглядит на странице*/
   margin: 4px 16px;
   color: rgba(185, 185, 185, 1);
@@ -284,6 +288,10 @@ header {
   top: 40px;
   border-radius: 4px;
   z-index: 1;
+}
+
+.pop-over-personal-account-open {
+  display: block;
 }
 
 .navigation-user .navigation-item:nth-child(2):focus-within .pop-over-personal-account {
@@ -342,7 +350,6 @@ header {
   z-index: 1;
 }
 
-/**не работает*/
 .navigation-user .navigation-item:first-child:focus-within .search-form {
   display: block;
 }
@@ -421,6 +428,10 @@ header {
   top: 40px;
   border-radius: 4px;
   z-index: 1;
+}
+
+.pop-over-cart-open {
+  display: block;
 }
 
 .pop-over-cart-title, .pop-over-cart-empty-title, .personal-account-title {
@@ -517,6 +528,10 @@ header {
   border-radius: 4px;
 }
 
+.pop-over-cart-empty-open {
+  display: block;
+}
+
 .pop-over-cart-empty-title {
   text-align: center;
   margin: 0;
@@ -535,8 +550,6 @@ header {
   cursor: pointer;
 }
 
-/**/
-
 /*Поп-ап обратной связи*/
 
 .pop-up-feedback-title {
@@ -551,12 +564,16 @@ header {
 }
 
 .pop-up-feedback {
-  display: none;
-  position: absolute;
+  display: block;
+  position: fixed;
   background-color: rgba(45, 52, 64, 0.3);
   width: 100%;
   height: 100%;
   left: 0;
+}
+
+.pop-up-feedback-close {
+  display: none;
 }
 
 .pop-up-feedback-wrapper {
@@ -1604,6 +1621,66 @@ li.stocks-item:nth-child(2) {
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
+}
+
+p .form-label {
+  position: relative;
+}
+
+.appointment-form-date span .tooltip {
+  position: absolute;
+  top: 3px;
+  left: 44px;
+}
+
+.appointment-form-adress span .tooltip {
+  position: absolute;
+  top: 3px;
+  left: 56px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #242424;
+  display: block;
+  margin-top: 1px;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  color: rgba(45, 52, 64, 1);
+}
+
+.tooltip-text {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(86, 92, 102, 1);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 10px 8px;
+  border-radius: 1px;
+  display: block;
+  width: 169px;
+  border: 1px solid rgba(185, 185, 185, 1);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 16px;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .contacts {

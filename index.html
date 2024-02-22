@@ -607,7 +607,15 @@
               method="post"
             >
               <p class="appointment-form-date">
-                <label class="form-label" for="appointment-date">Дата</label>
+                <span class="form-label">
+                  <label class="form-label" for="appointment-date">Дата</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><g clip-path="url(#a)"><path fill="#2D3440" fill-rule="evenodd" d="M7 2.13a4.88 4.88 0 1 0 0 9.75 4.88 4.88 0 0 0 0-9.75ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.33c.37 0 .67.3.67.67v2.22a.67.67 0 0 1-1.34 0V7c0-.37.3-.67.67-.67Zm0-2.21a.67.67 0 0 0 0 1.33.67.67 0 0 0 0-1.33Z" clip-rule="evenodd"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h14v14H0z"/></clipPath></defs></svg>
+                    </button>
+                    <span class="tooltip-text">Укажите желаемую дату доставки и мы свяжемся с вами.</span>
+                  </span>
+                </span>
                 <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
               </p>
               <p class="appointment-form-phone">
@@ -615,7 +623,15 @@
                 <input class="field" type="text" id="appointment-form-phone" name="appointment-form-phone" placeholder="+7 800 900-00-00">
               </p>
               <p class="appointment-form-adress">
-                <label class="form-label" for="appointment-adress">Адрес</label>
+                <span class="form-label">
+                  <label class="form-label" for="appointment-adress">Адрес</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14"><g clip-path="url(#a)"><path fill="#2D3440" fill-rule="evenodd" d="M7 2.13a4.88 4.88 0 1 0 0 9.75 4.88 4.88 0 0 0 0-9.75ZM.8 7a6.2 6.2 0 1 1 12.4 0A6.2 6.2 0 0 1 .8 7ZM7 6.33c.37 0 .67.3.67.67v2.22a.67.67 0 0 1-1.34 0V7c0-.37.3-.67.67-.67Zm0-2.21a.67.67 0 0 0 0 1.33.67.67 0 0 0 0-1.33Z" clip-rule="evenodd"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h14v14H0z"/></clipPath></defs></svg>
+                    </button>
+                    <span class="tooltip-text">Укажите название улицы, дома и квартиры.</span>
+                  </span>
+                </span>
                 <input class="field" type="text" id="appointment-adress" name="appointment-adress" placeholder="ул. Большая Конюшенная, 19/8">
               </p>
               <button class="button additional-button" type="submit">
@@ -706,7 +722,7 @@
         </p>
       </section>
     </footer>
-    <div class="pop-up-feedback">
+    <div class="pop-up-feedback pop-up-feedback-close">
       <div class="pop-up-feedback-wrapper">
         <button class="closing-button" type="button">
           <span class="visually-hidden">
