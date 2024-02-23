@@ -21,13 +21,13 @@
       </a>
       <nav class="navigation header-navigation">
         <ul class="navigation-list">
-          <li class="navigation-item navigation-current-item">
+          <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог
               <svg class="header-navigation-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="16" height="17" fill="none" viewBox="0 0 16 17">
                 <path fill="#2D3440" fill-rule="evenodd" d="M3.8 7.05a.67.67 0 1 0-.93.95l4.66 4.66a.66.66 0 0 0 .95 0L13.14 8a.67.67 0 0 0-.94-.95L8 11.25l-4.2-4.2Z" clip-rule="evenodd"/>
                </svg>
             </a>
-            <div class="catalog-pop-over"> <!--здесь можно без дива, сразу список ставить?-->
+            <div class="catalog-pop-over">
               <h3 class="visually-hidden">Меню каталога</h3>
               <ul class="catalog-pop-over-list">
                 <li class="catalog-pop-over-item">
@@ -171,14 +171,15 @@
       </header>
       <section class="catalog-products">
         <div class="catalog-filter-wrapper">
-          <h2 class="visually-hidden">Сортировка списка товаров</h2>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="popular">по популярности</option>
-            <option value="price">по цене</option>
-          </select>
           <h2 class="visually-hidden">Список товаров с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
+            <div class="select-wrapper">
+              <h2 class="catalog-filter-title">Сортировка:</h2>
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular">по популярности</option>
+                <option value="price">по цене</option>
+              </select>
+            </div>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title visually-hidden">Цена:</legend>
 
@@ -207,7 +208,6 @@
                   </div>
                 </div>
             </fieldset>
-
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Жирность</legend>
               <ul class="catalog-filter-list">
@@ -251,6 +251,9 @@
                       <svg class="checkbox-control-icon-checked" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
                         <path fill="#2D3440" fill-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" clip-rule="evenodd"/>
                       </svg>
+                      <svg class="checkbox-control-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill="#2D3440" fill-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h11.4c.24 0 .34.03.4.06a1 1 0 0 1 .28.23c.21.2.29.43.29.68V13.7a.96.96 0 0 1-.97.96H2.3a.96.96 0 0 1-.97-.96V2.3c0-.26.1-.5.29-.68Zm14.22 12.92A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16c.11-.1.27-.16.43-.16H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63v11.8c0 .18-.06.33-.16.44Z" clip-rule="evenodd"/>
+                      </svg>
                     </span>
                     <span class="control-label">шоколадные</span>
                   </label>
@@ -261,6 +264,9 @@
                     <span class="checkbox-control-mark">
                       <svg class="checkbox-control-icon-checked" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
                         <path fill="#2D3440" fill-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" clip-rule="evenodd"/>
+                      </svg>
+                      <svg class="checkbox-control-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill="#2D3440" fill-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h11.4c.24 0 .34.03.4.06a1 1 0 0 1 .28.23c.21.2.29.43.29.68V13.7a.96.96 0 0 1-.97.96H2.3a.96.96 0 0 1-.97-.96V2.3c0-.26.1-.5.29-.68Zm14.22 12.92A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16c.11-.1.27-.16.43-.16H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63v11.8c0 .18-.06.33-.16.44Z" clip-rule="evenodd"/>
                       </svg>
                     </span>
                     <span class="control-label">сахарные посыпки</span>
@@ -273,6 +279,9 @@
                       <svg class="checkbox-control-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="none" viewBox="0 0 16 16">
                         <path fill="#2D3440" fill-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h11.4c.24 0 .34.03.4.06a1 1 0 0 1 .28.23c.21.2.29.43.29.68V13.7a.96.96 0 0 1-.97.96H2.3a.96.96 0 0 1-.97-.96V2.3c0-.26.1-.5.29-.68Zm14.22 12.92A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16c.11-.1.27-.16.43-.16H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63v11.8c0 .18-.06.33-.16.44Z" clip-rule="evenodd"/>
                       </svg>
+                      <svg class="checkbox-control-icon-checked" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill="#2D3440" fill-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" clip-rule="evenodd"/>
+                      </svg>
                     </span>
                     <span class="control-label">фрукты</span>
                   </label>
@@ -284,6 +293,9 @@
                       <svg class="checkbox-control-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="none" viewBox="0 0 16 16">
                         <path fill="#2D3440" fill-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h11.4c.24 0 .34.03.4.06a1 1 0 0 1 .28.23c.21.2.29.43.29.68V13.7a.96.96 0 0 1-.97.96H2.3a.96.96 0 0 1-.97-.96V2.3c0-.26.1-.5.29-.68Zm14.22 12.92A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16c.11-.1.27-.16.43-.16H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63v11.8c0 .18-.06.33-.16.44Z" clip-rule="evenodd"/>
                       </svg>
+                      <svg class="checkbox-control-icon-checked" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill="#2D3440" fill-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" clip-rule="evenodd"/>
+                      </svg>
                     </span>
                     <span class="control-label">сиропы</span>
                   </label>
@@ -294,6 +306,9 @@
                     <span class="checkbox-control-mark">
                       <svg class="checkbox-control-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"  width="16" height="16" fill="none" viewBox="0 0 16 16">
                         <path fill="#2D3440" fill-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h11.4c.24 0 .34.03.4.06a1 1 0 0 1 .28.23c.21.2.29.43.29.68V13.7a.96.96 0 0 1-.97.96H2.3a.96.96 0 0 1-.97-.96V2.3c0-.26.1-.5.29-.68Zm14.22 12.92A2.3 2.3 0 0 1 13.7 16H2.3A2.3 2.3 0 0 1 0 13.7V2.3A2.3 2.3 0 0 1 1.46.16c.11-.1.27-.16.43-.16H13.7c.34 0 .65.04.94.17.28.12.5.31.69.5.48.48.67 1.06.67 1.63v11.8c0 .18-.06.33-.16.44Z" clip-rule="evenodd"/>
+                      </svg>
+                      <svg class="checkbox-control-icon-checked" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                        <path fill="#2D3440" fill-rule="evenodd" d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 1 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" clip-rule="evenodd"/>
                       </svg>
                     </span>
                     <span class="control-label">джемы</span>
