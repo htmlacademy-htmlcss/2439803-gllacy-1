@@ -2052,6 +2052,7 @@ p .form-label {
 
 .checkbox-control-mark {
   position: absolute;
+  display: flex;
   top: 2px;
   left: 0;
   width: 16px;
