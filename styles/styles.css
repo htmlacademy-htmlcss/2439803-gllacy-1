@@ -213,7 +213,7 @@ html {
 
 .header-navigation {
   width: 450px;
-  margin-left: 16px;
+  margin-left: 14px;
 }
 
 .navigation-item {
@@ -361,7 +361,7 @@ html {
 	-moz-box-sizing: border-box; /* для FF, который не весь CSS3 осилил */
 }
 
-input[type="search"]::-webkit-search-cancel-button { /* псевдо что-то, что отвечает за кнопку очистки */
+.search-field::-webkit-search-cancel-button { /* псевдо что-то, что отвечает за кнопку очистки */
 	-webkit-appearance: none; /* без сброса оформление не применится */
 	width: 16px; /* размеры кастомного крестика */
 	height: 16px;
@@ -420,7 +420,8 @@ input[type="search"]::-webkit-search-cancel-button { /* псевдо что-то
 }
 
 .field:invalid:hover {
-  border: 2px solid #ea5451;
+  border: 1px solid #ea5451;
+  outline: 1px solid #ea5451;
   background-color: #ffffff;
 }
 
@@ -1090,7 +1091,7 @@ input[type="search"]::-webkit-search-cancel-button { /* псевдо что-то
 }
 
 .header-navigation .navigation-item {
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 .header-navigation .navigation-item:hover {
@@ -2106,7 +2107,7 @@ li.stocks-item:nth-child(2) {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 1.3px solid #2d3440
+  border: 1.3px solid #2d3440;
 }
 
 .control-input[type="radio"]:checked + .radio-control-mark:before {
@@ -2124,7 +2125,7 @@ li.stocks-item:nth-child(2) {
   border: 1.3px solid #fcfcfc;
 }
 
-.control-input[type="radio"]:checked + .control:hover .radio-control-mark:before {
+.control-input[type="radio"]:checked:hover + .radio-control-mark:before {
   position: absolute;
   top: 4px;
   left: 4px;
@@ -2135,21 +2136,21 @@ li.stocks-item:nth-child(2) {
   content: "";
 }
 
-.radio-control-mark:disabled {
-  border: 1.3px solid rgba(45, 52, 64, 0.4);
+.control-input:disabled + .radio-control-mark {
+  border: 1.3px solid #2d3440;
+  opacity: 40%;
 }
 
-.control-input[type="radio"]:checked + .radio-control-mark:disabled:before {
+.control-input[type="radio"]:checked:disabled + .radio-control-mark:before {
   position: absolute;
   top: 4px;
   left: 4px;
   width: 6px;
   height: 6px;
-  background-color: rgba(45, 52, 64, 0.4);
+  background-color: #2d3440;
   border-radius: 50%;
   content: "";
 }
-
 
 .control-input[type="checkbox"] + .checkbox-control-mark .checkbox-control-icon-checked {
   display: none;
@@ -2172,12 +2173,16 @@ li.stocks-item:nth-child(2) {
   height: 16px;
 }
 
-.checkbox-control-mark:hover path {
+.control:hover .checkbox-control-mark path {
   fill: #fcfcfc;
 }
 
-.checkbox-control-mark:disabled path {
-  fill: rgba(45, 52, 64, 0.5);
+.control-input:disabled + .checkbox-control-mark {
+  opacity: 40%;
+}
+
+.control-input:disabled + .checkbox-control-mark path {
+  fill: #2d3440;
 }
 
 .catalog-products {
