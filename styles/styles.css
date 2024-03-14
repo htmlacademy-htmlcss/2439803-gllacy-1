@@ -410,7 +410,8 @@ html {
 }
 
 .field:focus {
-  border: 2px solid #2d3440;
+  border: 1px solid #2d3440;
+  outline: 1px solid #2d3440;
   background-color: #ffffff;
 }
 
