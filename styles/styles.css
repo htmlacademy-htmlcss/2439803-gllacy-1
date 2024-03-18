@@ -1144,72 +1144,71 @@ html {
   outline: none;
 }
 
-
-.header-navigation .navigation-current-item,
-.user-header-navigation .navigation-item:not(:last-child) .current-button {
+.navigation-current-item,
+.navigation-current-button {
   background-color: #ff4a78;
   border-radius: 30px;
   outline: none;
   border: 2px solid transparent;
 }
 
-.header-navigation .navigation-current-item .navigation-link,
-.user-header-navigation .navigation-item:not(:last-child) .current-button {
+.navigation-current-item .navigation-link,
+.navigation-current-button {
   color: #fcfcfc;
 }
 
-.header-navigation .navigation-current-item path,
-.user-header-navigation .navigation-item:not(:last-child) .current-button path {
+.navigation-current-item path,
+.navigation-current-button path {
   fill: #fcfcfc;
 }
 
-.header-navigation .navigation-current-item .header-navigation-icon{
+.navigation-current-item .header-navigation-icon{
   transform: scale(1, -1);
   top: 12px;
   bottom: 8px;
 }
 
-.header-navigation .navigation-current-item:hover,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:hover {
+.navigation-current-item:hover,
+.navigation-current-button:hover {
   background-color: rgba(255, 74, 120, 0.6);
   border-radius: 30px;
   outline: none;
   border: 2px solid transparent;
 }
 
-.header-navigation .navigation-current-item:hover .navigation-link,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:hover {
+.navigation-current-item:hover .navigation-link,
+.navigation-current-button:hover {
   color: rgba(252, 252, 252, 0.6);
 }
 
-.header-navigation .navigation-current-item:hover path,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:hover path {
+.navigation-current-item:hover path,
+.navigation-current-button:hover path {
   fill: rgba(252, 252, 252, 0.6);
 }
 
-.header-navigation .navigation-current-item:focus,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:focus {
+.navigation-current-item:focus,
+.navigation-current-button:focus {
   background-color: #ff4a78;
   border-radius: 30px;
   outline: none;
   border: 2px solid #000000;
 }
 
-.header-navigation .navigation-current-item:active,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:active {
+.navigation-current-item:active,
+.navigation-current-button:active {
   background-color: rgba(255, 74, 120, 0.3);
   border-radius: 30px;
   outline: none;
   border: 2px solid transparent;
 }
 
-.header-navigation .navigation-current-item:active .navigation-link,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:active {
+.navigation-current-item:active .navigation-link,
+.navigation-current-button:active {
   color: rgba(252, 252, 252, 0.3);
 }
 
-.header-navigation .navigation-current-item:active path,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:active path{
+.navigation-current-item:active path,
+.navigation-current-button:active path{
   fill: rgba(252, 252, 252, 0.3);
 }
 
