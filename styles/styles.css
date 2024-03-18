@@ -200,6 +200,15 @@ html {
   border: 1px solid #fcfcfc;
 }
 
+.slider-pagination-button:focus-visible {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+  border: 1px solid #2d3440;
+  outline: 0;
+}
+
 .page-header {
   display: flex;
   align-items: center;
@@ -2130,8 +2139,7 @@ li.stocks-item:nth-child(2) {
   content: "";
 }
 
-.control:hover .radio-control-mark,
-.control:focus .radio-control-mark {
+.control:hover .radio-control-mark {
   border: 1.3px solid #fcfcfc;
 }
 
@@ -2150,6 +2158,10 @@ li.stocks-item:nth-child(2) {
 .control-input:disabled + .radio-control-mark {
   border: 1.3px solid #2d3440;
   opacity: 40%;
+}
+
+.control-input:focus + .radio-control-mark {
+  border: 1.3px solid #fcfcfc;
 }
 
 .control-input[type="radio"]:checked:disabled + .radio-control-mark:before {
@@ -2184,8 +2196,7 @@ li.stocks-item:nth-child(2) {
   height: 16px;
 }
 
-.control:hover .checkbox-control-mark path,
-.control:focus .checkbox-control-mark path {
+.control:hover .checkbox-control-mark path {
   fill: #fcfcfc;
 }
 
@@ -2195,6 +2206,10 @@ li.stocks-item:nth-child(2) {
 
 .control-input:disabled + .checkbox-control-mark path {
   fill: #2d3440;
+}
+
+.control-input:focus + .checkbox-control-mark path {
+  fill: #fcfcfc;
 }
 
 .catalog-products {
