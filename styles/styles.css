@@ -235,7 +235,7 @@ html {
   background-color: #fcfcfc;
   width: 135px;
   position: absolute;
-  top: 40px;
+  top: 42px;
   left: 0;
   padding: 8px 0;
   display: none;
@@ -248,7 +248,7 @@ html {
 }
 
 .catalog-pop-over-list hr {
-  margin: 4px 16px;
+  margin: 10px 16px 4px 16px;
   color: #b9b9b9;
   height: 1px;
   width: 103px;
@@ -266,6 +266,10 @@ html {
   padding: 6px 13px 6px 16px;
 }
 
+.catalog-pop-over-item:first-child {
+  margin-top: 8px;
+}
+
 .navigation-link-category a {
   padding: 8px 10px 8px 16px;
 }
@@ -280,11 +284,11 @@ html {
 .pop-over-personal-account {
   position: absolute;
   display: none;
-  width: 420px;
+  width: 326px;
   padding: 48px 48px 52px;
   background-color: #fcfcfc;
   right: 0;
-  top: 40px;
+  top: 34px;
   border-radius: 4px;
   z-index: 1;
 }
@@ -300,13 +304,14 @@ html {
 .personal-account-form {
   display: flex;
   flex-direction: column;
+  width: 323px;
 }
 
 .pop-over-personal-account-wrapper {
   display: grid;
-  grid-template-columns: 113px 23px 113px 1fr;
+  grid-template-columns: 113px 22px 120px 1fr;
   grid-template-rows: 20px 4px 20px;
-  margin-top: 32px;
+  margin-top: 31px;
 }
 
 .pop-over-personal-account-wrapper .additional-button {
@@ -344,8 +349,8 @@ html {
   padding: 24px 16px;
   background-color: #fcfcfc;
   border-radius: 4px;
-  right: 0;
-  top: 40px;
+  right: -32px;
+  top: 35px;
   z-index: 1;
 }
 
@@ -447,10 +452,10 @@ html {
   display: none;
   position: absolute;
   background-color: #fcfcfc;
-  width: 441px;
+  width: 345px;
   padding: 48px;
   right: 0;
-  top: 40px;
+  top: 34px;
   border-radius: 4px;
   z-index: 1;
 }
@@ -504,13 +509,9 @@ html {
   justify-content: space-between;
 }
 
-.pop-over-cart-item:nth-child(1) {
-  margin-bottom: 24px;
-}
-
  .pop-over-cart hr {
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   color: #e7e7e7;
   height: 1px;
 }
@@ -521,13 +522,22 @@ html {
 }
 
 .pop-over-cart-product-price {
-  margin-right: 52px;
+  margin-left: 17px;
+  margin-top: 13px;
 }
 
 .pop-over-cart-product-wrapper {
   display: grid;
-  grid-template-columns: 46px 16px 190px;
+  grid-template-columns: 46px 16px 97px;
   grid-template-rows: 22px 4px 20px;
+}
+
+.pop-over-cart-product-wrapper .closing-button {
+  margin-bottom: 7px;
+}
+
+.pop-over-cart-item:nth-child(2) {
+  margin-top: 15px;
 }
 
 .pop-over-cart-image {
@@ -548,12 +558,12 @@ html {
 .pop-over-cart-empty {
   display: none;
   position: absolute;
-  padding: 48px 25px;
+  padding: 47px 25px;
   background-color: #fcfcfc;
-  width: 288px;
+  width: 239px;
   min-height: 56px;
-  right: 0px;
-  top: 40px;
+  right: 0;
+  top: 35px;
   border-radius: 4px;
 }
 
@@ -1134,75 +1144,73 @@ html {
   outline: none;
 }
 
-
-.header-navigation .navigation-current-item,
-.user-header-navigation .navigation-item:not(:last-child) .current-button {
+.navigation-current-item,
+.navigation-user .navigation-current-button {
   background-color: #ff4a78;
   border-radius: 30px;
   outline: none;
   border: 2px solid transparent;
 }
 
-.header-navigation .navigation-current-item .navigation-link,
-.user-header-navigation .navigation-item:not(:last-child) .current-button {
+.navigation-current-item .navigation-link,
+.navigation-user .navigation-current-button {
   color: #fcfcfc;
 }
 
-.header-navigation .navigation-current-item path,
-.user-header-navigation .navigation-item:not(:last-child) .current-button path {
+.navigation-current-item path,
+.navigation-user .navigation-current-button path {
   fill: #fcfcfc;
 }
 
-.header-navigation .navigation-current-item .header-navigation-icon{
+.navigation-current-item .header-navigation-icon{
   transform: scale(1, -1);
   top: 12px;
   bottom: 8px;
 }
 
-.header-navigation .navigation-current-item:hover,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:hover {
+.navigation-current-item:hover,
+.navigation-user .navigation-current-button:hover {
   background-color: rgba(255, 74, 120, 0.6);
   border-radius: 30px;
   outline: none;
   border: 2px solid transparent;
 }
 
-.header-navigation .navigation-current-item:hover .navigation-link,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:hover {
+.navigation-current-item:hover .navigation-link,
+.navigation-user .navigation-current-button:hover {
   color: rgba(252, 252, 252, 0.6);
 }
 
-.header-navigation .navigation-current-item:hover path,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:hover path {
+.navigation-current-item:hover path,
+.navigation-user .navigation-current-button:hover path {
   fill: rgba(252, 252, 252, 0.6);
 }
 
-.header-navigation .navigation-current-item:focus,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:focus {
+.navigation-current-item:focus,
+.navigation-user .navigation-current-button:focus {
   background-color: #ff4a78;
   border-radius: 30px;
   outline: none;
   border: 2px solid #000000;
 }
 
-.header-navigation .navigation-current-item:active,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:active {
+.navigation-current-item:active,
+.navigation-user .navigation-current-button:active {
   background-color: rgba(255, 74, 120, 0.3);
   border-radius: 30px;
   outline: none;
   border: 2px solid transparent;
 }
 
-.header-navigation .navigation-current-item:active .navigation-link,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:active {
+.navigation-current-item:active .navigation-link,
+.navigation-user .navigation-current-button:active {
   color: rgba(252, 252, 252, 0.3);
 }
 
-.header-navigation .navigation-current-item:active path,
-.user-header-navigation .navigation-item:not(:last-child) .current-button:active path{
+.navigation-current-item:active path,
+.navigation-user .navigation-current-button:active path{
   fill: rgba(252, 252, 252, 0.3);
 }
-
 
 .additional-button {
   font-family: Inter;
@@ -1958,7 +1966,7 @@ li.stocks-item:nth-child(2) {
 .breadcrumbs-item:not(:last-child)::after {
   position: absolute;
   content: url("../files/icon-chevrons-right.svg");
-  right: 8px;
+  right: 7px;
   top: 2px;
 }
 
@@ -2027,7 +2035,7 @@ li.stocks-item:nth-child(2) {
 
 .catalog-filter-label {
   display: flex;
-  margin-right: 3px;
+  margin-right: 8px;
   color: #2d3440;
   font-weight: 400;
   font-size: 14px;
@@ -2122,11 +2130,13 @@ li.stocks-item:nth-child(2) {
   content: "";
 }
 
-.control:hover .radio-control-mark {
+.control:hover .radio-control-mark,
+.control:focus .radio-control-mark {
   border: 1.3px solid #fcfcfc;
 }
 
-.control-input[type="radio"]:checked:hover + .radio-control-mark:before {
+.control-input[type="radio"]:checked:hover + .radio-control-mark:before,
+.control-input[type="radio"]:checked:focus + .radio-control-mark:before {
   position: absolute;
   top: 4px;
   left: 4px;
@@ -2174,7 +2184,8 @@ li.stocks-item:nth-child(2) {
   height: 16px;
 }
 
-.control:hover .checkbox-control-mark path {
+.control:hover .checkbox-control-mark path,
+.control:focus .checkbox-control-mark path {
   fill: #fcfcfc;
 }
 
@@ -2200,7 +2211,8 @@ li.stocks-item:nth-child(2) {
   min-height: 20px;
   width: 335px;
   padding: 8px 24px;
-  gap: 16px;
+  column-gap: 16px;
+  row-gap: 14px;
   margin: 0;
   margin-top: 7px;
 }
@@ -2211,7 +2223,6 @@ li.stocks-item:nth-child(2) {
   align-items: center;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
-  height: 20px;
   width: 556px;
   padding: 10px 24px;
   gap: 16px;
@@ -2222,7 +2233,7 @@ li.stocks-item:nth-child(2) {
 .breadcrumbs-link {
   color: inherit;
   text-decoration: none;
-  margin-right: 32px
+  margin-right: 28px;
 }
 
 li .breadcrumbs-item:last-child {
