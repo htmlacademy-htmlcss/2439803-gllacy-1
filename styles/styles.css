@@ -1145,7 +1145,7 @@ html {
 }
 
 .navigation-current-item,
-.navigation-current-button {
+.navigation-user .navigation-current-button {
   background-color: #ff4a78;
   border-radius: 30px;
   outline: none;
@@ -1153,12 +1153,12 @@ html {
 }
 
 .navigation-current-item .navigation-link,
-.navigation-current-button {
+.navigation-user .navigation-current-button {
   color: #fcfcfc;
 }
 
 .navigation-current-item path,
-.navigation-current-button path {
+.navigation-user .navigation-current-button path {
   fill: #fcfcfc;
 }
 
@@ -1169,7 +1169,7 @@ html {
 }
 
 .navigation-current-item:hover,
-.navigation-current-button:hover {
+.navigation-user .navigation-current-button:hover {
   background-color: rgba(255, 74, 120, 0.6);
   border-radius: 30px;
   outline: none;
@@ -1177,17 +1177,17 @@ html {
 }
 
 .navigation-current-item:hover .navigation-link,
-.navigation-current-button:hover {
+.navigation-user .navigation-current-button:hover {
   color: rgba(252, 252, 252, 0.6);
 }
 
 .navigation-current-item:hover path,
-.navigation-current-button:hover path {
+.navigation-user .navigation-current-button:hover path {
   fill: rgba(252, 252, 252, 0.6);
 }
 
 .navigation-current-item:focus,
-.navigation-current-button:focus {
+.navigation-user .navigation-current-button:focus {
   background-color: #ff4a78;
   border-radius: 30px;
   outline: none;
@@ -1195,7 +1195,7 @@ html {
 }
 
 .navigation-current-item:active,
-.navigation-current-button:active {
+.navigation-user .navigation-current-button:active {
   background-color: rgba(255, 74, 120, 0.3);
   border-radius: 30px;
   outline: none;
@@ -1203,15 +1203,14 @@ html {
 }
 
 .navigation-current-item:active .navigation-link,
-.navigation-current-button:active {
+.navigation-user .navigation-current-button:active {
   color: rgba(252, 252, 252, 0.3);
 }
 
 .navigation-current-item:active path,
-.navigation-current-button:active path{
+.navigation-user .navigation-current-button:active path{
   fill: rgba(252, 252, 252, 0.3);
 }
-
 
 .additional-button {
   font-family: Inter;
@@ -2131,11 +2130,13 @@ li.stocks-item:nth-child(2) {
   content: "";
 }
 
-.control:hover .radio-control-mark {
+.control:hover .radio-control-mark,
+.control:focus .radio-control-mark {
   border: 1.3px solid #fcfcfc;
 }
 
-.control-input[type="radio"]:checked:hover + .radio-control-mark:before {
+.control-input[type="radio"]:checked:hover + .radio-control-mark:before,
+.control-input[type="radio"]:checked:focus + .radio-control-mark:before {
   position: absolute;
   top: 4px;
   left: 4px;
@@ -2183,7 +2184,8 @@ li.stocks-item:nth-child(2) {
   height: 16px;
 }
 
-.control:hover .checkbox-control-mark path {
+.control:hover .checkbox-control-mark path,
+.control:focus .checkbox-control-mark path {
   fill: #fcfcfc;
 }
 
