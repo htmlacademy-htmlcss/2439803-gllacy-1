@@ -38,11 +38,11 @@ body {
 }
 
 .body-blue {
-  background-color: #69A9FF;
+  background-color: #69a9ff;
 }
 
 .body-yellow {
-  background-color: #FCC850;
+  background-color: #fcc850;
 }
 
 html {
@@ -608,7 +608,7 @@ html {
   line-height: 30px;
   color: #2d3440;
   margin: 0;
-  margin-bottom: 32px;
+  margin-top: 15px;
 }
 
 .pop-up-feedback {
@@ -630,7 +630,7 @@ html {
   position: absolute;
   display: flex;
   flex-direction: column;
-  padding: 32px 32px 64px 64px;
+  padding: 32px 32px 50px 64px;
   background-color: #fcfcfc;
   width: 474px;
   min-height: 449px;
@@ -642,12 +642,15 @@ html {
   display: block;
   margin-left: auto;
   padding-bottom: 16px;
+  width: 18px;
 }
 
 .pop-up-feedback-form {
   display: flex;
   flex-direction: column;
-  width: 444px;
+  width: 443px;
+  margin-top: 31px;
+  margin-bottom: 13px;
 }
 
 .pop-up-feedback-form input {
@@ -660,14 +663,14 @@ html {
 }
 
 .pop-up-feedback-form textarea {
-  height: 180px;
-  margin-bottom: 20px;
+  height: 120px;
+  margin-bottom: 32px;
 }
 
 .pop-up-feedback-form .additional-button {
   margin-left: auto;
+  margin-top: 2px;
 }
-
 
 .page-footer {
   color: #2d3440;
