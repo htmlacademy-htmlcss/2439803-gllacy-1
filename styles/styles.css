@@ -1508,7 +1508,7 @@ li.stocks-item:nth-child(2) {
 
 .product-card-image {
   clip-path: circle(50%);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .advantages {
@@ -2360,7 +2360,7 @@ li .breadcrumbs-item:last-child {
   display: grid;
   grid-template-columns: repeat(4, 270px);
   column-gap: 30px;
-  row-gap: 91px;
+  row-gap: 93px;
 }
 
 .catalog-products .product-card:first-child,
